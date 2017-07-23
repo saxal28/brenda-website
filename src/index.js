@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+import "./sass/App.css";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import { HashRouter } from "react-router-dom";
+import {App} from "./react/App";
+
+ReactDOM.render(<HashRouter><App/></HashRouter>,
+	document.getElementById('root'));
 registerServiceWorker();
