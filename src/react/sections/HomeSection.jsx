@@ -4,7 +4,9 @@ export class HomeSection extends React.Component {
 	render() {
 		return (
 			<div>
-				<h1>this is the home route</h1>
+				<section className="home">
+					<h1>This is Brenda's Website</h1>
+				</section>
 			</div>
 		)
 	}
