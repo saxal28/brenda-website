@@ -1,0 +1,31 @@
+@import "colors.scss";
+
+@font-face {
+	font-family: "High Tide - Demo";
+	src: url("../assets/HighTide.ttf");
+}
+
+@font-face {
+	font-family: "Andale Mono";
+	src: url("../assets/Andale Mono.ttf");
+}
+
+p, button {
+	font-family: "Andale Mono" !important ;
+}
+
+h1 {
+	font-family: "High Tide - Demo";
+	font-size: 85px;
+	color: white;
+	text-shadow: 0px 2px 1px black;
+	max-width: 700px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 100px;
+}
+
+strong {
+	color: $gold;
+}
+

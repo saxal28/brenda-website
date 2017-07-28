@@ -1,0 +1,16 @@
+button {
+  padding: 20px 30px;
+  color: white;
+  border: 3px solid white;
+  background: transparent;
+  margin: 0 15px;
+  font-size: 17px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 400ms ease-in-out; }
+  button.active {
+    color: #333;
+    background: white; }
+  button:hover {
+    background: white;
+    color: #333; }

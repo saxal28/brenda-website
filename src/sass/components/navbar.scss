@@ -1,0 +1,35 @@
+@import "../colors.scss";
+
+.navbar {
+	
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 40px;
+	
+	display: flex;
+	justify-content: flex-end;
+	
+	.nav-link {
+		color: white;
+		margin-right: 20px;
+		text-transform: uppercase;
+		font-family: "Andale Mono";
+		padding-bottom: 10px;
+		border-bottom: 3px solid transparent;
+		cursor: pointer;
+		transition: all 400ms;
+		
+		&:hover {
+			color: goldenrod;
+			border-bottom-color: goldenrod;
+		}
+		
+		&.active {
+			color: $gold;
+			border-bottom-color: $gold;
+		}
+		
+	}
+}

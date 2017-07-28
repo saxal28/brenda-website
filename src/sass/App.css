@@ -1,5 +1,91 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  background-color: red; }
+  font-family: sans-serif; }
+
+.container {
+  max-width: 960px;
+  margin: 0 auto; }
+
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover !important;
+  background-position: center center; }
+  section.home {
+    background: url("http://i.imgur.com/OsoF39r.png"); }
+  section.about {
+    background: url("http://i.imgur.com/VYz0BqI.png"); }
+
+.button-row {
+  margin: 50px auto 10px auto;
+  display: flex;
+  justify-content: center; }
+
+button {
+  padding: 20px 30px;
+  color: white;
+  border: 3px solid white;
+  background: transparent;
+  margin: 0 15px;
+  font-size: 17px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 400ms ease-in-out; }
+  button.active {
+    color: #333;
+    background: white; }
+  button:hover {
+    background: white;
+    color: #333; }
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 40px;
+  display: flex;
+  justify-content: flex-end; }
+  .navbar .nav-link {
+    color: white;
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-family: "Andale Mono";
+    padding-bottom: 10px;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    transition: all 400ms; }
+    .navbar .nav-link:hover {
+      color: goldenrod;
+      border-bottom-color: goldenrod; }
+    .navbar .nav-link.active {
+      color: #ffd800;
+      border-bottom-color: #ffd800; }
+
+@font-face {
+  font-family: "High Tide - Demo";
+  src: url("../assets/HighTide.ttf"); }
+
+@font-face {
+  font-family: "Andale Mono";
+  src: url("../assets/Andale Mono.ttf"); }
+
+p, button {
+  font-family: "Andale Mono" !important; }
+
+h1 {
+  font-family: "High Tide - Demo";
+  font-size: 85px;
+  color: white;
+  text-shadow: 0px 2px 1px black;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 100px; }
+
+strong {
+  color: #ffd800; }
