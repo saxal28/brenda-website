@@ -1,8 +1,3 @@
-.container {
-	max-width: 960px;
-	margin: 0 auto;
-}
-
 section {
 	height: 100vh;
 	display: flex;
@@ -10,15 +5,75 @@ section {
 	justify-content: center;
 	align-items: center;
 	
+	background: url("http://i.imgur.com/5qpl0KU.png");
 	background-size: cover !important;
 	background-position: center center;
 	
-	&.home  { background: url("http://i.imgur.com/OsoF39r.png") }
-	&.about { background: url("http://i.imgur.com/VYz0BqI.png") }
+	&.about { height: 70vh}
+	&.categories { height: 50vh }
+	
 }
 
 .button-row {
 	margin: 50px auto 10px auto;
 	display: flex;
 	justify-content: center;
+}
+
+// todo -- kick out into theme sass file and combine with theme
+
+
+//row/column helpers
+.full-height {  height: 100%; }
+.full-width {  width: 100%; margin: 0; padding: 0; }
+.image-col {
+	background: url("http://i.imgur.com/CX5QmN2.jpg");
+	background-size: cover !important;
+	background-position: center center !important;
+	
+}
+
+.center-vertical-horizontal {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+//themes and backgrounds
+
+// todo -- kick out into theme sass file
+
+.primary-theme {
+	background: white;
+	h1 { color: purple }
+	strong { color: gold }
+	p { color: #333 }
+	button {
+		color: purple;
+		border-color: purple;
+		&.active {
+			background: purple;
+			color: white;
+		}
+		&:hover {
+			background: purple;
+			color: white;
+		}
+	}
+}
+
+.primary-theme-inverted {
+	background: purple;
+	h1 { color: white }
+	strong { color: gold }
+	p { color: white }
+	button {
+		color: white;
+		border-color: white;
+		&.active {
+			background: white;
+			color: purple;
+		}
+	}
 }

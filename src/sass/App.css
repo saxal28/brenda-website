@@ -3,34 +3,83 @@ body {
   padding: 0;
   font-family: sans-serif; }
 
-.container {
-  max-width: 960px;
-  margin: 0 auto; }
-
 section {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: url("http://i.imgur.com/5qpl0KU.png");
   background-size: cover !important;
   background-position: center center; }
-  section.home {
-    background: url("http://i.imgur.com/OsoF39r.png"); }
   section.about {
-    background: url("http://i.imgur.com/VYz0BqI.png"); }
+    height: 70vh; }
+  section.categories {
+    height: 50vh; }
 
 .button-row {
   margin: 50px auto 10px auto;
   display: flex;
   justify-content: center; }
 
+.full-height {
+  height: 100%; }
+
+.full-width {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.image-col {
+  background: url("http://i.imgur.com/CX5QmN2.jpg");
+  background-size: cover !important;
+  background-position: center center !important; }
+
+.center-vertical-horizontal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.primary-theme {
+  background: white; }
+  .primary-theme h1 {
+    color: purple; }
+  .primary-theme strong {
+    color: gold; }
+  .primary-theme p {
+    color: #333; }
+  .primary-theme button {
+    color: purple;
+    border-color: purple; }
+    .primary-theme button.active {
+      background: purple;
+      color: white; }
+    .primary-theme button:hover {
+      background: purple;
+      color: white; }
+
+.primary-theme-inverted {
+  background: purple; }
+  .primary-theme-inverted h1 {
+    color: white; }
+  .primary-theme-inverted strong {
+    color: gold; }
+  .primary-theme-inverted p {
+    color: white; }
+  .primary-theme-inverted button {
+    color: white;
+    border-color: white; }
+    .primary-theme-inverted button.active {
+      background: white;
+      color: purple; }
+
 button {
-  padding: 20px 30px;
+  padding: 15px 25px;
   color: white;
   border: 3px solid white;
   background: transparent;
-  margin: 0 15px;
+  margin: 0 10px;
   font-size: 17px;
   text-transform: uppercase;
   cursor: pointer;
@@ -66,6 +115,27 @@ button {
       color: #ffd800;
       border-bottom-color: #ffd800; }
 
+.category-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%; }
+
+.category-box {
+  height: 250px;
+  width: 250px;
+  background: royalblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  box-shadow: 3px 3px 6px #333;
+  background: url("http://i.imgur.com/CX5QmN2.jpg");
+  background-size: cover !important;
+  background-position: center !important; }
+  .category-box h1 {
+    font-size: 55px; }
+
 @font-face {
   font-family: "High Tide - Demo";
   src: url("../assets/HighTide.ttf"); }
@@ -86,6 +156,13 @@ h1 {
   margin: 0 auto;
   text-align: center;
   line-height: 100px; }
+
+p {
+  font-size: 16px;
+  color: white;
+  line-height: 32px;
+  width: 70%;
+  margin: 30px auto; }
 
 strong {
   color: #ffd800; }

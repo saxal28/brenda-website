@@ -19,5 +19,12 @@ h1 {
   text-align: center;
   line-height: 100px; }
 
+p {
+  font-size: 16px;
+  color: white;
+  line-height: 32px;
+  width: 70%;
+  margin: 30px auto; }
+
 strong {
   color: #ffd800; }
