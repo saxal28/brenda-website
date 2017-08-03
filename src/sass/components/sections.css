@@ -28,7 +28,7 @@ section {
   section.contact {
     height: 100vh; }
   section.footer {
-    height: 50vh;
+    height: 40vh;
     background: deepskyblue; }
 
 .button-row {
@@ -45,9 +45,8 @@ section {
   padding: 0; }
 
 .image-col {
-  background: url("http://i.imgur.com/CX5QmN2.jpg");
-  background-size: cover !important;
-  background-position: center center !important; }
+  background: url("http://i.imgur.com/953xDKj.jpg");
+  background-size: cover !important; }
 
 .center-vertical-horizontal {
   display: flex;

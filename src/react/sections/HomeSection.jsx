@@ -58,7 +58,6 @@ export class HomeSection extends React.Component {
 						<div className="button-row">
 							<button>Contact Us</button>
 						</div>
-						<h1></h1>
 
 					</section>
 

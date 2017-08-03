@@ -32,7 +32,7 @@ section {
 	&.about { height: 70vh }
 	&.categories { height: 50vh }
 	&.contact { height: 100vh }
-	&.footer { height: 50vh; background: $primary }
+	&.footer { height: 40vh; background: $primary }
 	
 }
 
@@ -49,9 +49,9 @@ section {
 .full-height {  height: 100%; }
 .full-width {  width: 100%; margin: 0; padding: 0; }
 .image-col {
-	background: url("http://i.imgur.com/CX5QmN2.jpg");
+	background: url("http://i.imgur.com/953xDKj.jpg");
 	background-size: cover !important;
-	background-position: center center !important;
+	//background-position: center center !important;
 	
 }
 
