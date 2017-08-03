@@ -5,16 +5,13 @@
   width: 100%; }
 
 .category-box {
-  height: 250px;
-  width: 250px;
-  background: royalblue;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  box-shadow: 3px 3px 6px #333;
+  position: relative;
   background: url("http://i.imgur.com/CX5QmN2.jpg");
-  background-size: cover !important;
+  background-size: cover   !important;
   background-position: center !important; }
-  .category-box h1 {
+  .category-box.category-box h1 {
     font-size: 55px; }

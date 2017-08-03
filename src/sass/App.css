@@ -3,19 +3,38 @@ body {
   padding: 0;
   font-family: sans-serif; }
 
+@keyframes animateBackground {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 100% 0; } }
+
 section {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url("http://i.imgur.com/5qpl0KU.png");
-  background-size: cover !important;
-  background-position: center center; }
+  background-image: url("http://i.imgur.com/BCG6ok4.png");
+  background-color: palevioletred;
+  background-blend-mode: multiply;
+  background-size: 200%;
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+  animation: animateBackground 40s linear infinite; }
+  @media only screen and (max-width: 480px) {
+    section {
+      background-size: cover; } }
   section.about {
     height: 70vh; }
   section.categories {
     height: 50vh; }
+  section.contact {
+    height: 100vh; }
+  section.footer {
+    height: 50vh;
+    background: deepskyblue; }
 
 .button-row {
   margin: 50px auto 10px auto;
@@ -44,23 +63,23 @@ section {
 .primary-theme {
   background: white; }
   .primary-theme h1 {
-    color: purple; }
+    color: deepskyblue; }
   .primary-theme strong {
     color: gold; }
   .primary-theme p {
     color: #333; }
   .primary-theme button {
-    color: purple;
-    border-color: purple; }
+    color: deepskyblue;
+    border-color: deepskyblue; }
     .primary-theme button.active {
-      background: purple;
+      background: deepskyblue;
       color: white; }
     .primary-theme button:hover {
-      background: purple;
+      background: deepskyblue;
       color: white; }
 
 .primary-theme-inverted {
-  background: purple; }
+  background: deepskyblue; }
   .primary-theme-inverted h1 {
     color: white; }
   .primary-theme-inverted strong {
@@ -72,7 +91,7 @@ section {
     border-color: white; }
     .primary-theme-inverted button.active {
       background: white;
-      color: purple; }
+      color: deepskyblue; }
 
 button {
   padding: 15px 25px;
@@ -80,7 +99,7 @@ button {
   border: 3px solid white;
   background: transparent;
   margin: 0 10px;
-  font-size: 17px;
+  font-size: 14px;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 400ms ease-in-out; }
@@ -98,22 +117,27 @@ button {
   right: 0;
   padding: 40px;
   display: flex;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  z-index: 100; }
   .navbar .nav-link {
     color: white;
-    margin-right: 20px;
+    padding: 10px;
     text-transform: uppercase;
     font-family: "Andale Mono";
-    padding-bottom: 10px;
     border-bottom: 3px solid transparent;
     cursor: pointer;
     transition: all 400ms; }
     .navbar .nav-link:hover {
-      color: goldenrod;
-      border-bottom-color: goldenrod; }
+      color: dodgerblue;
+      border-bottom-color: dodgerblue; }
     .navbar .nav-link.active {
-      color: #ffd800;
-      border-bottom-color: #ffd800; }
+      color: deepskyblue;
+      border-bottom-color: deepskyblue; }
+    .navbar .nav-link.button {
+      margin-left: 10px;
+      border: 2px solid white; }
+      .navbar .nav-link.button:hover {
+        background: white; }
 
 .category-row {
   display: flex;
@@ -122,19 +146,39 @@ button {
   width: 100%; }
 
 .category-box {
-  height: 250px;
-  width: 250px;
-  background: royalblue;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  box-shadow: 3px 3px 6px #333;
-  background: url("http://i.imgur.com/CX5QmN2.jpg");
-  background-size: cover !important;
-  background-position: center !important; }
+  position: relative;
+  background: dodgerblue;
+  background-size: cover   !important; }
+  .category-box.gallery {
+    background: url("http://i.imgur.com/CX5QmN2.jpg"); }
+  .category-box.cast {
+    background: url("http://i.imgur.com/CtoSUkG.jpg"); }
+  .category-box.characters {
+    background: url("http://i.imgur.com/caS9AhG.jpg"); }
   .category-box h1 {
     font-size: 55px; }
+
+.line-break {
+  height: 7px;
+  width: 100px;
+  margin: 40px auto;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white; }
+
+.social-media-row {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto 0px auto; }
+  .social-media-row .fa {
+    font-size: 70px;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer; }
 
 @font-face {
   font-family: "High Tide - Demo";
@@ -149,13 +193,29 @@ p, button {
 
 h1 {
   font-family: "High Tide - Demo";
-  font-size: 85px;
+  font-size: 65px;
   color: white;
-  text-shadow: 0px 2px 1px black;
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
-  line-height: 100px; }
+  line-height: 90px; }
+  @media only screen and (max-width: 480px) {
+    h1 {
+      font-size: 45px;
+      line-height: 65px; } }
+
+h2 {
+  font-family: "High Tide - Demo";
+  font-size: 45px;
+  color: white;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 70px; }
+  @media only screen and (max-width: 480px) {
+    h2 {
+      font-size: 25px;
+      line-height: 45px; } }
 
 p {
   font-size: 16px;
@@ -165,4 +225,11 @@ p {
   margin: 30px auto; }
 
 strong {
-  color: #ffd800; }
+  color: deepskyblue; }
+
+.question-mark {
+  font-size: 60px;
+  font-family: "Marker Felt"; }
+  @media only screen and (max-width: 480px) {
+    .question-mark {
+      font-size: 45px; } }

@@ -8,7 +8,7 @@ export class Navbar extends React.Component {
 				<div className="nav-link">gallery</div>
 				<div className="nav-link">characters</div>
 				<div className="nav-link">contact</div>
-				<div className="nav-link">book now</div>
+				<div className="nav-link button">book now</div>
 			</div>
 		)
 	}

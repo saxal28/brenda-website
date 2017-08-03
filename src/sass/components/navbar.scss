@@ -11,24 +11,31 @@
 	display: flex;
 	justify-content: flex-end;
 	
+	z-index: 100;
+	
 	.nav-link {
 		color: white;
-		margin-right: 20px;
+		padding: 10px;
 		text-transform: uppercase;
 		font-family: "Andale Mono";
-		padding-bottom: 10px;
 		border-bottom: 3px solid transparent;
 		cursor: pointer;
 		transition: all 400ms;
 		
 		&:hover {
-			color: goldenrod;
-			border-bottom-color: goldenrod;
+			color: $primary-hover;
+			border-bottom-color: $primary-hover;
 		}
 		
 		&.active {
-			color: $gold;
-			border-bottom-color: $gold;
+			color: $primary;
+			border-bottom-color: $primary;
+		}
+		
+		&.button {
+			margin-left:10px;
+			border: 2px solid white;
+			&:hover { background: white }
 		}
 		
 	}

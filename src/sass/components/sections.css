@@ -1,16 +1,35 @@
+@keyframes animateBackground {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 100% 0; } }
+
 section {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url("http://i.imgur.com/5qpl0KU.png");
-  background-size: cover !important;
-  background-position: center center; }
+  background-image: url("http://i.imgur.com/BCG6ok4.png");
+  background-color: palevioletred;
+  background-blend-mode: multiply;
+  background-size: 200%;
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+  animation: animateBackground 40s linear infinite; }
+  @media only screen and (max-width: 480px) {
+    section {
+      background-size: cover; } }
   section.about {
     height: 70vh; }
   section.categories {
     height: 50vh; }
+  section.contact {
+    height: 100vh; }
+  section.footer {
+    height: 50vh;
+    background: deepskyblue; }
 
 .button-row {
   margin: 50px auto 10px auto;
@@ -39,23 +58,23 @@ section {
 .primary-theme {
   background: white; }
   .primary-theme h1 {
-    color: purple; }
+    color: deepskyblue; }
   .primary-theme strong {
     color: gold; }
   .primary-theme p {
     color: #333; }
   .primary-theme button {
-    color: purple;
-    border-color: purple; }
+    color: deepskyblue;
+    border-color: deepskyblue; }
     .primary-theme button.active {
-      background: purple;
+      background: deepskyblue;
       color: white; }
     .primary-theme button:hover {
-      background: purple;
+      background: deepskyblue;
       color: white; }
 
 .primary-theme-inverted {
-  background: purple; }
+  background: deepskyblue; }
   .primary-theme-inverted h1 {
     color: white; }
   .primary-theme-inverted strong {
@@ -67,4 +86,4 @@ section {
     border-color: white; }
     .primary-theme-inverted button.active {
       background: white;
-      color: purple; }
+      color: deepskyblue; }
