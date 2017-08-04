@@ -1,3 +1,5 @@
+@import "../colors.scss";
+
 .category-row {
 	display: flex;
 	flex-wrap: wrap;
@@ -13,8 +15,9 @@
 	align-items: center;
 	margin: 0 auto;
 	
+	height: 40vh;
+	
 	position: relative;
-	//box-shadow: 3px 3px 6px #333;
 	background: $primary-hover;
 	
 	&.gallery { background: url("http://i.imgur.com/CX5QmN2.jpg")}
@@ -22,10 +25,29 @@
 	&.characters { background: url("http://i.imgur.com/caS9AhG.jpg")}
 	
 	background-size: cover   !important;
-	//background-position: center center !important;
+	
+	&:hover {
+		.overlay { background: $primary-hover }
+	}
 	
 	h1 {
 		font-size: 55px;
+		color: white;
+		font-weight: inherit;
 	}
+	
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right :0;
+	background: purple;
+	opacity: 0.5;
+	transition: all 200ms linear;
+	
+	cursor: pointer;
 	
 }

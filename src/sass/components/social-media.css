@@ -1,9 +1,8 @@
 .social-media-row {
   display: flex;
-  justify-content: center;
-  margin: 30px auto 0px auto; }
+  justify-content: center; }
   .social-media-row .fa {
-    font-size: 70px;
+    font-size: 50px;
     color: white;
     padding: 10px;
     border-radius: 50%;

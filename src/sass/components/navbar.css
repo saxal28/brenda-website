@@ -7,14 +7,29 @@
   display: flex;
   justify-content: flex-end;
   z-index: 100; }
+  @media only screen and (max-width: 480px) {
+    .navbar {
+      padding: 15px; } }
+  .navbar .nav-menu-button {
+    display: none;
+    font-size: 24px;
+    z-index: 201; }
+    @media only screen and (max-width: 480px) {
+      .navbar .nav-menu-button {
+        display: initial;
+        color: #333; } }
   .navbar .nav-link {
-    color: white;
-    padding: 10px;
+    color: #333;
+    padding: 4px;
     text-transform: uppercase;
     font-family: "Andale Mono";
     border-bottom: 3px solid transparent;
     cursor: pointer;
-    transition: all 400ms; }
+    transition: all 400ms;
+    text-decoration: none !important; }
+    @media only screen and (max-width: 480px) {
+      .navbar .nav-link {
+        display: none; } }
     .navbar .nav-link:hover {
       color: dodgerblue;
       border-bottom-color: dodgerblue; }

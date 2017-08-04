@@ -1,0 +1,11 @@
+input[type=text], textarea {
+  max-width: 400px;
+  width: 90%;
+  background: transparent;
+  border: 3px solid #333;
+  padding: 10px 5px;
+  margin: 10px auto;
+  resize: none; }
+
+textarea, input, button {
+  outline: none; }

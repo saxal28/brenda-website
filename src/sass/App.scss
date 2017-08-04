@@ -1,15 +1,19 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
-
 @import "components/sections.scss";
 @import "components/button.scss";
 @import "components/navbar.scss";
 @import "components/category-box.scss";
 @import "components/line-break.scss";
 @import "components/social-media.scss";
+@import "components/form.scss";
+@import "components/image.scss";
+@import "components/menu-overlay.scss";
 
 @import "fonts.scss";
 @import "colors.scss";
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	//background: $primary-hover;
+}

@@ -1,0 +1,19 @@
+.image-left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 350px;
+  transform: scaleX(-1); }
+  @media only screen and (max-width: 480px) {
+    .image-left {
+      display: none; } }
+
+.image-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 350px;
+  transform: scaleX(-1); }
+  @media only screen and (max-width: 480px) {
+    .image-right {
+      display: none; } }

@@ -1,0 +1,29 @@
+@import "../media.scss";
+
+.image-left {
+	position:absolute;
+	left: 0;
+	bottom: 0;
+	width: 350px;
+	
+	transform: scaleX(-1);
+	
+	@include respond-to($phone) {
+		display: none;
+	}
+	
+}
+
+.image-right {
+	position:absolute;
+	right: 0;
+	bottom: 0;
+	width: 350px;
+	
+	transform: scaleX(-1);
+	
+	@include respond-to($phone) {
+		display: none;
+	}
+	
+}

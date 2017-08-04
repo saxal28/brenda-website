@@ -10,29 +10,34 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("http://i.imgur.com/BCG6ok4.png");
-  background-color: palevioletred;
-  background-blend-mode: multiply;
-  background-size: 200%;
-  background-position: 0px 0px;
-  background-repeat: repeat-x;
+  background-image: url("http://www.drodd.com/images14/white-wallpaper13.jpg");
   background-attachment: fixed;
-  animation: animateBackground 40s linear infinite; }
+  position: relative; }
   @media only screen and (max-width: 480px) {
     section {
       background-size: cover; } }
+  section.home .overlay {
+    color: white;
+    right: inherit;
+    width: 50vw;
+    background: dodgerblue; }
   section.about {
-    height: 70vh; }
+    height: 60vh; }
   section.categories {
-    height: 50vh; }
+    height: 40vh; }
+  section.gallery {
+    background: cornflowerblue; }
+  section.characters {
+    background: cornflowerblue; }
   section.contact {
-    height: 100vh; }
+    height: 90vh;
+    overflow: hidden; }
   section.footer {
-    height: 40vh;
+    height: 10vh;
     background: deepskyblue; }
 
 .button-row {
-  margin: 50px auto 10px auto;
+  margin: 20px auto;
   display: flex;
   justify-content: center; }
 
@@ -45,7 +50,7 @@ section {
   padding: 0; }
 
 .image-col {
-  background: url("http://i.imgur.com/953xDKj.jpg");
+  background: url("http://i.imgur.com/Jl1Be8N.jpg");
   background-size: cover !important; }
 
 .center-vertical-horizontal {
@@ -84,5 +89,8 @@ section {
     color: white;
     border-color: white; }
     .primary-theme-inverted button.active {
+      background: white;
+      color: deepskyblue; }
+    .primary-theme-inverted button:hover {
       background: white;
       color: deepskyblue; }

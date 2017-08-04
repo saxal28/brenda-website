@@ -10,8 +10,13 @@ export class HomeSection extends React.Component {
 
 						<h1>Book A <strong>Princess</strong> <br />For Your Next Party <span className="question-mark">!</span></h1>
 
+						{/*<div className="overlay" />*/}
+
 						<div className="button-row">
 							<button>Gallery</button>
+
+							<img className="image-left" src="http://i.imgur.com/7Okym4Z.png" />
+
 							<button className="active">Book Now</button>
 						</div>
 					</div>
@@ -51,9 +56,11 @@ export class HomeSection extends React.Component {
 					</section>
 
 					<section className="contact">
-						<h1>Have Questions</h1>
+						<h1>Have Questions <span className="question-mark">?</span></h1>
 
-						<h2>Send US Your Questions <span className="question-mark">!</span></h2>
+						<h2>Send them to us</h2>
+
+						<img src="http://i.imgur.com/UyBY6B0.png" className="image-right" />
 
 						<div className="button-row">
 							<button>Contact Us</button>
@@ -62,7 +69,7 @@ export class HomeSection extends React.Component {
 					</section>
 
 					<section className="footer">
-						<h1>Follow Us <span className="question-mark">!</span> </h1>
+						{/*<h1>Follow Us <span className="question-mark">!</span> </h1>*/}
 
 						<div className="social-media-row">
 							<i className="fa fa-facebook" />

@@ -1,8 +1,3 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif; }
-
 @keyframes animateBackground {
   from {
     background-position: 0 0; }
@@ -15,29 +10,34 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("http://i.imgur.com/BCG6ok4.png");
-  background-color: palevioletred;
-  background-blend-mode: multiply;
-  background-size: 200%;
-  background-position: 0px 0px;
-  background-repeat: repeat-x;
+  background-image: url("http://www.drodd.com/images14/white-wallpaper13.jpg");
   background-attachment: fixed;
-  animation: animateBackground 40s linear infinite; }
+  position: relative; }
   @media only screen and (max-width: 480px) {
     section {
       background-size: cover; } }
+  section.home .overlay {
+    color: white;
+    right: inherit;
+    width: 50vw;
+    background: dodgerblue; }
   section.about {
-    height: 70vh; }
+    height: 60vh; }
   section.categories {
-    height: 50vh; }
+    height: 40vh; }
+  section.gallery {
+    background: cornflowerblue; }
+  section.characters {
+    background: cornflowerblue; }
   section.contact {
-    height: 100vh; }
+    height: 90vh;
+    overflow: hidden; }
   section.footer {
-    height: 40vh;
+    height: 10vh;
     background: deepskyblue; }
 
 .button-row {
-  margin: 50px auto 10px auto;
+  margin: 20px auto;
   display: flex;
   justify-content: center; }
 
@@ -50,7 +50,7 @@ section {
   padding: 0; }
 
 .image-col {
-  background: url("http://i.imgur.com/953xDKj.jpg");
+  background: url("http://i.imgur.com/Jl1Be8N.jpg");
   background-size: cover !important; }
 
 .center-vertical-horizontal {
@@ -91,11 +91,14 @@ section {
     .primary-theme-inverted button.active {
       background: white;
       color: deepskyblue; }
+    .primary-theme-inverted button:hover {
+      background: white;
+      color: deepskyblue; }
 
 button {
   padding: 15px 25px;
-  color: white;
-  border: 3px solid white;
+  color: #333;
+  border: 3px solid #333;
   background: transparent;
   margin: 0 10px;
   font-size: 14px;
@@ -103,11 +106,11 @@ button {
   cursor: pointer;
   transition: all 400ms ease-in-out; }
   button.active {
-    color: #333;
-    background: white; }
+    color: white;
+    background: #333; }
   button:hover {
-    background: white;
-    color: #333; }
+    background: #333;
+    color: white; }
 
 .navbar {
   position: fixed;
@@ -118,14 +121,29 @@ button {
   display: flex;
   justify-content: flex-end;
   z-index: 100; }
+  @media only screen and (max-width: 480px) {
+    .navbar {
+      padding: 15px; } }
+  .navbar .nav-menu-button {
+    display: none;
+    font-size: 24px;
+    z-index: 201; }
+    @media only screen and (max-width: 480px) {
+      .navbar .nav-menu-button {
+        display: initial;
+        color: #333; } }
   .navbar .nav-link {
-    color: white;
-    padding: 10px;
+    color: #333;
+    padding: 4px;
     text-transform: uppercase;
     font-family: "Andale Mono";
     border-bottom: 3px solid transparent;
     cursor: pointer;
-    transition: all 400ms; }
+    transition: all 400ms;
+    text-decoration: none !important; }
+    @media only screen and (max-width: 480px) {
+      .navbar .nav-link {
+        display: none; } }
     .navbar .nav-link:hover {
       color: dodgerblue;
       border-bottom-color: dodgerblue; }
@@ -149,6 +167,7 @@ button {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  height: 40vh;
   position: relative;
   background: dodgerblue;
   background-size: cover   !important; }
@@ -158,8 +177,23 @@ button {
     background: url("http://i.imgur.com/CtoSUkG.jpg"); }
   .category-box.characters {
     background: url("http://i.imgur.com/caS9AhG.jpg"); }
+  .category-box:hover .overlay {
+    background: dodgerblue; }
   .category-box h1 {
-    font-size: 55px; }
+    font-size: 55px;
+    color: white;
+    font-weight: inherit; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: purple;
+  opacity: 0.5;
+  transition: all 200ms linear;
+  cursor: pointer; }
 
 .line-break {
   height: 7px;
@@ -170,14 +204,69 @@ button {
 
 .social-media-row {
   display: flex;
-  justify-content: center;
-  margin: 30px auto 0px auto; }
+  justify-content: center; }
   .social-media-row .fa {
-    font-size: 70px;
+    font-size: 50px;
     color: white;
     padding: 10px;
     border-radius: 50%;
     cursor: pointer; }
+
+input[type=text], textarea {
+  max-width: 400px;
+  width: 90%;
+  background: transparent;
+  border: 3px solid #333;
+  padding: 10px 5px;
+  margin: 10px auto;
+  resize: none; }
+
+textarea, input, button {
+  outline: none; }
+
+.image-left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 350px;
+  transform: scaleX(-1); }
+  @media only screen and (max-width: 480px) {
+    .image-left {
+      display: none; } }
+
+.image-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 350px;
+  transform: scaleX(-1); }
+  @media only screen and (max-width: 480px) {
+    .image-right {
+      display: none; } }
+
+.menu-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  opacity: 0.9;
+  z-index: 100;
+  overflow: hidden;
+  background: dodgerblue; }
+  .menu-overlay body {
+    display: none; }
+  .menu-overlay h1 {
+    color: white;
+    font-weight: inherit;
+    margin: 5px auto;
+    padding: 8px;
+    border-bottom: 3px solid transparent;
+    transition: all 300ms; }
+    .menu-overlay h1:hover {
+      border-bottom-color: white; }
+  .menu-overlay .menu-container {
+    height: 60vh; }
 
 @font-face {
   font-family: "High Tide - Demo";
@@ -187,17 +276,16 @@ button {
   font-family: "Andale Mono";
   src: url("../assets/Andale Mono.ttf"); }
 
-p, button {
-  font-family: "Andale Mono" !important; }
-
 h1 {
   font-family: "High Tide - Demo";
-  font-size: 65px;
-  color: white;
+  font-size: 70px;
+  color: #333;
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
-  line-height: 90px; }
+  line-height: 90px;
+  font-weight: bold;
+  z-index: 10; }
   @media only screen and (max-width: 480px) {
     h1 {
       font-size: 45px;
@@ -206,7 +294,7 @@ h1 {
 h2 {
   font-family: "High Tide - Demo";
   font-size: 45px;
-  color: white;
+  color: #333;
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
@@ -218,17 +306,30 @@ h2 {
 
 p {
   font-size: 16px;
-  color: white;
+  color: #333;
   line-height: 32px;
   width: 70%;
   margin: 30px auto; }
 
 strong {
-  color: deepskyblue; }
+  color: deepskyblue;
+  font-family: "High Tide - Demo"; }
 
 .question-mark {
-  font-size: 60px;
+  font-size: 50px;
   font-family: "Marker Felt"; }
   @media only screen and (max-width: 480px) {
     .question-mark {
       font-size: 45px; } }
+
+* {
+  color: #333;
+  font-family: "Andale Mono"; }
+
+.col-sm-6 {
+  text-align: center; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; }

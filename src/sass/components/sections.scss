@@ -13,31 +13,36 @@ section {
 	justify-content: center;
 	align-items: center;
 	
-	background-image: url("http://i.imgur.com/BCG6ok4.png");
-	background-color: palevioletred;
-	background-blend-mode: multiply;
-	background-size: 200%;
+	background-image: url("http://www.drodd.com/images14/white-wallpaper13.jpg");
+	background-attachment: fixed;
+	
+	position: relative;
+	
+	//animation: animateBackground 40s linear infinite;
 	
 	@include respond-to($phone) {
 		background-size:cover;
 	}
 	
-	background-position: 0px 0px;
-	background-repeat: repeat-x;
-	
-	background-attachment: fixed;
-	
-	animation: animateBackground 40s linear infinite;
-	
-	&.about { height: 70vh }
-	&.categories { height: 50vh }
-	&.contact { height: 100vh }
-	&.footer { height: 40vh; background: $primary }
+	&.home {
+		.overlay {
+			color: white;
+			right: inherit;
+			width: 50vw;
+			background:$primary-hover;
+		}
+	}
+	&.about { height: 60vh }
+	&.categories { height: 40vh }
+	&.gallery { background: cornflowerblue }
+	&.characters { background: cornflowerblue }
+	&.contact { height: 90vh; overflow: hidden }
+	&.footer { height: 10vh; background: $primary }
 	
 }
 
 .button-row {
-	margin: 50px auto 10px auto;
+	margin: 20px auto;
 	display: flex;
 	justify-content: center;
 }
@@ -49,10 +54,8 @@ section {
 .full-height {  height: 100%; }
 .full-width {  width: 100%; margin: 0; padding: 0; }
 .image-col {
-	background: url("http://i.imgur.com/953xDKj.jpg");
+	background: url("http://i.imgur.com/Jl1Be8N.jpg");
 	background-size: cover !important;
-	//background-position: center center !important;
-	
 }
 
 .center-vertical-horizontal {
@@ -97,5 +100,6 @@ section {
 			background: white;
 			color: $primary;
 		}
+		&:hover { background: white; color: $primary}
 	}
 }

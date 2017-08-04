@@ -1,7 +1,7 @@
 button {
 	padding: 15px 25px;
-	color: white;
-	border: 3px solid white;
+	color: #333;
+	border: 3px solid #333;
 	background: transparent;
 	margin: 0 10px;
 	font-size: 14px;
@@ -12,11 +12,11 @@ button {
 	transition: all 400ms ease-in-out;
 	
 	&.active {
-		color: #333;
-		background: white;
+		color: white;
+		background: #333;
 	}
 	&:hover {
-		background: white;
-		color: #333;
+		background: #333;
+		color: white;
 	}
 }

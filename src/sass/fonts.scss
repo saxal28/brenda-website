@@ -11,19 +11,17 @@
 	src: url("../assets/Andale Mono.ttf");
 }
 
-p, button {
-	font-family: "Andale Mono" !important ;
-}
-
 h1 {
 	font-family: "High Tide - Demo";
-	font-size: 65px;
-	color: white;
-	//text-shadow: 0px 2px 1px black;
+	font-size: 70px;
+	color: #333;
 	max-width: 700px;
 	margin: 0 auto;
 	text-align: center;
 	line-height: 90px;
+	font-weight: bold;
+	
+	z-index: 10;
 	
 	@include respond-to($phone) {
 		font-size: 45px;
@@ -35,7 +33,7 @@ h1 {
 h2 {
 	font-family: "High Tide - Demo";
 	font-size: 45px;
-	color: white;
+	color: #333;
 	max-width: 700px;
 	margin: 0 auto;
 	text-align: center;
@@ -50,7 +48,7 @@ h2 {
 
 p {
 	font-size: 16px;
-	color: white;
+	color: #333;
 	line-height: 32px;
 	width: 70%;
 	margin: 30px auto;
@@ -58,10 +56,11 @@ p {
 
 strong {
 	color: $primary;
+	font-family: "High Tide - Demo";
 }
 
 .question-mark {
-	font-size: 60px;
+	font-size: 50px;
 	//font-weight: bold;
 	font-family: "Marker Felt";
 	
@@ -69,5 +68,14 @@ strong {
 		font-size: 45px;
 	}
 	
+}
+
+* {
+	color: #333;
+	font-family: "Andale Mono";
+}
+
+.col-sm-6 {
+	text-align: center;
 }
 

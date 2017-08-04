@@ -9,9 +9,30 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  height: 40vh;
   position: relative;
-  background: url("http://i.imgur.com/CX5QmN2.jpg");
-  background-size: cover   !important;
-  background-position: center !important; }
-  .category-box.category-box h1 {
-    font-size: 55px; }
+  background: dodgerblue;
+  background-size: cover   !important; }
+  .category-box.gallery {
+    background: url("http://i.imgur.com/CX5QmN2.jpg"); }
+  .category-box.cast {
+    background: url("http://i.imgur.com/CtoSUkG.jpg"); }
+  .category-box.characters {
+    background: url("http://i.imgur.com/caS9AhG.jpg"); }
+  .category-box:hover .overlay {
+    background: dodgerblue; }
+  .category-box h1 {
+    font-size: 55px;
+    color: white;
+    font-weight: inherit; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: purple;
+  opacity: 0.5;
+  transition: all 200ms linear;
+  cursor: pointer; }
