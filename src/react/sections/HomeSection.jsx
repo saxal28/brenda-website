@@ -15,14 +15,14 @@ export class HomeSection extends React.Component {
 						<div className="button-row">
 							<button>Gallery</button>
 
-							<img className="image-left" src="http://i.imgur.com/7Okym4Z.png" />
+							{/*<img className="image-left" src="http://i.imgur.com/7Okym4Z.png" />*/}
 
 							<button className="active">Book Now</button>
 						</div>
 					</div>
 				</section>
 
-				<section className="about">
+				<section className="about hide-mobile">
 					<div className="container full-height full-width">
 						<div className="col-sm-6 full-height center-vertical-horizontal primary-theme-inverted">
 							<h1>Who We Are</h1>
@@ -60,7 +60,7 @@ export class HomeSection extends React.Component {
 
 						<h2>Send them to us</h2>
 
-						<img src="http://i.imgur.com/UyBY6B0.png" className="image-right" />
+						{/*<img src="http://i.imgur.com/UyBY6B0.png" className="image-right" />*/}
 
 						<div className="button-row">
 							<button>Contact Us</button>

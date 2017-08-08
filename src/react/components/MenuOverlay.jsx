@@ -10,11 +10,11 @@ export class MenuOverlay extends React.Component {
 		return (
 			<div>
 				{visible && <div className="overlay menu-overlay">
-					<h1>Home</h1>
-					<h1>Characters</h1>
-					<h1>Gallery</h1>
-					<h1>Contact</h1>
-					<h1>Book Now</h1>
+					<NavLink to="/" className="overlay-link" exact  onClick={toggleMenuOverlay}>home</NavLink>
+					<NavLink to="/gallery" className="overlay-link" strict onClick={toggleMenuOverlay}>gallery</NavLink>
+					<NavLink to="/characters" className="overlay-link" strict onClick={toggleMenuOverlay}>characters</NavLink>
+					<NavLink to="/contact" className="overlay-link" strict onClick={toggleMenuOverlay}>contact</NavLink>
+					<NavLink to="/book-now" className="overlay-link button" strict onClick={toggleMenuOverlay}>book now</NavLink>
 				</div>}
 			</div>
 		)

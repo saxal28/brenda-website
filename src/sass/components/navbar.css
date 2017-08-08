@@ -13,13 +13,13 @@
   .navbar .nav-menu-button {
     display: none;
     font-size: 24px;
-    z-index: 201; }
+    z-index: 205; }
     @media only screen and (max-width: 480px) {
       .navbar .nav-menu-button {
         display: initial;
-        color: #333; } }
+        color: white; } }
   .navbar .nav-link {
-    color: #333;
+    color: white;
     padding: 4px;
     text-transform: uppercase;
     font-family: "Andale Mono";

@@ -13,8 +13,11 @@ section {
 	justify-content: center;
 	align-items: center;
 	
-	background-image: url("http://www.drodd.com/images14/white-wallpaper13.jpg");
+	background-image: url("http://i.imgur.com/c8yTj5q.jpg");
+	background-color: teal;
+	background-blend-mode: multiply;
 	background-attachment: fixed;
+	background-size:cover;
 	
 	position: relative;
 	
@@ -32,12 +35,21 @@ section {
 			background:$primary-hover;
 		}
 	}
-	&.about { height: 60vh }
-	&.categories { height: 40vh }
+	&.about {
+		height: 60vh; max-width: 960px; margin: 0 auto;
+		@include respond-to($phone) {
+			height:  70vh;
+		}
+	}
+	&.categories { max-width: 960px; margin: 0 auto; height: auto; }
 	&.gallery { background: cornflowerblue }
 	&.characters { background: cornflowerblue }
-	&.contact { height: 90vh; overflow: hidden }
-	&.footer { height: 10vh; background: $primary }
+	&.contact { height: 100vh; }
+	&.footer { height: 12vh; position: fixed; bottom: 0; left: 0; right: 0; background: transparent }
+	
+	&.hide-mobile {
+		@include respond-to($phone) { display: none }
+	}
 	
 }
 
@@ -73,7 +85,7 @@ section {
 	background: white;
 	h1 { color: $primary }
 	strong { color: gold }
-	p { color: #333 }
+	p { color: white }
 	button {
 		color: $primary;
 		border-color: $primary;

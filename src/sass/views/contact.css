@@ -1,0 +1,5 @@
+section.contact .row {
+  height: 100%;
+  overflow-x: hidden; }
+  section.contact .row h2, section.contact .row h3 {
+    margin: 20px auto; }

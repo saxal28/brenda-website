@@ -10,8 +10,11 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("http://www.drodd.com/images14/white-wallpaper13.jpg");
+  background-image: url("http://i.imgur.com/LJcvVUf.jpg");
+  background-color: teal;
+  background-blend-mode: multiply;
   background-attachment: fixed;
+  background-size: cover;
   position: relative; }
   @media only screen and (max-width: 480px) {
     section {
@@ -22,19 +25,32 @@ section {
     width: 50vw;
     background: dodgerblue; }
   section.about {
-    height: 60vh; }
+    height: 60vh;
+    max-width: 960px;
+    margin: 0 auto; }
+    @media only screen and (max-width: 480px) {
+      section.about {
+        height: 70vh; } }
   section.categories {
-    height: 40vh; }
+    max-width: 960px;
+    margin: 0 auto;
+    height: auto; }
   section.gallery {
     background: cornflowerblue; }
   section.characters {
     background: cornflowerblue; }
   section.contact {
-    height: 90vh;
-    overflow: hidden; }
+    height: 100vh; }
   section.footer {
-    height: 10vh;
-    background: deepskyblue; }
+    height: 12vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: transparent; }
+  @media only screen and (max-width: 480px) {
+    section.hide-mobile {
+      display: none; } }
 
 .button-row {
   margin: 20px auto;
@@ -66,7 +82,7 @@ section {
   .primary-theme strong {
     color: gold; }
   .primary-theme p {
-    color: #333; }
+    color: white; }
   .primary-theme button {
     color: deepskyblue;
     border-color: deepskyblue; }
@@ -97,20 +113,20 @@ section {
 
 button {
   padding: 15px 25px;
-  color: #333;
-  border: 3px solid #333;
+  color: white;
+  border: 2px solid white;
   background: transparent;
-  margin: 0 10px;
+  margin: 0 6px;
   font-size: 14px;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 400ms ease-in-out; }
   button.active {
-    color: white;
-    background: #333; }
+    color: #333;
+    background: white; }
   button:hover {
-    background: #333;
-    color: white; }
+    background: white;
+    color: #333; }
 
 .navbar {
   position: fixed;
@@ -127,13 +143,13 @@ button {
   .navbar .nav-menu-button {
     display: none;
     font-size: 24px;
-    z-index: 201; }
+    z-index: 205; }
     @media only screen and (max-width: 480px) {
       .navbar .nav-menu-button {
         display: initial;
-        color: #333; } }
+        color: white; } }
   .navbar .nav-link {
-    color: #333;
+    color: white;
     padding: 4px;
     text-transform: uppercase;
     font-family: "Andale Mono";
@@ -216,8 +232,9 @@ input[type=text], textarea {
   max-width: 400px;
   width: 90%;
   background: transparent;
-  border: 3px solid #333;
+  border: 2px solid white;
   padding: 10px 5px;
+  padding-left: 15px;
   margin: 10px auto;
   resize: none; }
 
@@ -251,22 +268,30 @@ textarea, input, button {
   flex-direction: column;
   position: fixed;
   opacity: 0.9;
-  z-index: 100;
+  z-index: 99;
   overflow: hidden;
   background: dodgerblue; }
   .menu-overlay body {
     display: none; }
-  .menu-overlay h1 {
-    color: white;
-    font-weight: inherit;
+  .menu-overlay .overlay-link {
+    color: white !important;
     margin: 5px auto;
     padding: 8px;
-    border-bottom: 3px solid transparent;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    width: 120px;
+    text-align: center;
     transition: all 300ms; }
-    .menu-overlay h1:hover {
+    .menu-overlay .overlay-link:hover {
       border-bottom-color: white; }
   .menu-overlay .menu-container {
     height: 60vh; }
+
+section.contact .row {
+  height: 100%;
+  overflow-x: hidden; }
+  section.contact .row h2, section.contact .row h3 {
+    margin: 20px auto; }
 
 @font-face {
   font-family: "High Tide - Demo";
@@ -279,12 +304,11 @@ textarea, input, button {
 h1 {
   font-family: "High Tide - Demo";
   font-size: 70px;
-  color: #333;
+  color: white;
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
   line-height: 90px;
-  font-weight: bold;
   z-index: 10; }
   @media only screen and (max-width: 480px) {
     h1 {
@@ -294,7 +318,7 @@ h1 {
 h2 {
   font-family: "High Tide - Demo";
   font-size: 45px;
-  color: #333;
+  color: white;
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
@@ -306,7 +330,7 @@ h2 {
 
 p {
   font-size: 16px;
-  color: #333;
+  color: white;
   line-height: 32px;
   width: 70%;
   margin: 30px auto; }
@@ -316,14 +340,14 @@ strong {
   font-family: "High Tide - Demo"; }
 
 .question-mark {
-  font-size: 50px;
+  font-size: 40px;
   font-family: "Marker Felt"; }
   @media only screen and (max-width: 480px) {
     .question-mark {
       font-size: 45px; } }
 
 * {
-  color: #333;
+  color: white;
   font-family: "Andale Mono"; }
 
 .col-sm-6 {
@@ -332,4 +356,11 @@ strong {
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  background: cadetblue;
+  height: 100%;
+  overflow: auto; }
+
+html {
+  height: 100%;
+  overflow: hidden; }

@@ -5,19 +5,21 @@
   flex-direction: column;
   position: fixed;
   opacity: 0.9;
-  z-index: 100;
+  z-index: 99;
   overflow: hidden;
   background: dodgerblue; }
   .menu-overlay body {
     display: none; }
-  .menu-overlay h1 {
-    color: white;
-    font-weight: inherit;
+  .menu-overlay .overlay-link {
+    color: white !important;
     margin: 5px auto;
     padding: 8px;
-    border-bottom: 3px solid transparent;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    width: 120px;
+    text-align: center;
     transition: all 300ms; }
-    .menu-overlay h1:hover {
+    .menu-overlay .overlay-link:hover {
       border-bottom-color: white; }
   .menu-overlay .menu-container {
     height: 60vh; }

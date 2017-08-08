@@ -9,12 +9,11 @@
 h1 {
   font-family: "High Tide - Demo";
   font-size: 70px;
-  color: #333;
+  color: white;
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
   line-height: 90px;
-  font-weight: bold;
   z-index: 10; }
   @media only screen and (max-width: 480px) {
     h1 {
@@ -24,7 +23,7 @@ h1 {
 h2 {
   font-family: "High Tide - Demo";
   font-size: 45px;
-  color: #333;
+  color: white;
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
@@ -36,7 +35,7 @@ h2 {
 
 p {
   font-size: 16px;
-  color: #333;
+  color: white;
   line-height: 32px;
   width: 70%;
   margin: 30px auto; }
@@ -46,14 +45,14 @@ strong {
   font-family: "High Tide - Demo"; }
 
 .question-mark {
-  font-size: 50px;
+  font-size: 40px;
   font-family: "Marker Felt"; }
   @media only screen and (max-width: 480px) {
     .question-mark {
       font-size: 45px; } }
 
 * {
-  color: #333;
+  color: white;
   font-family: "Andale Mono"; }
 
 .col-sm-6 {

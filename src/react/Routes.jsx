@@ -4,6 +4,7 @@ import {HomeSection} from "./sections/HomeSection";
 import {ContactSection} from "./sections/ContactSection";
 import {GallerySection} from "./sections/GallerySection";
 import {CharacterSection} from "./sections/CharacterSection";
+import {BookNowSection} from "./sections/BookNowSection";
 
 export class Routes extends React.Component {
 
@@ -14,6 +15,7 @@ export class Routes extends React.Component {
 				<Route path="/gallery" component={GallerySection} />
 				<Route path="/characters" component={CharacterSection} />
 				<Route path="/contact" component={ContactSection} />
+				<Route path="/book-now" component={BookNowSection} />
 			</div>
 		)
 	}

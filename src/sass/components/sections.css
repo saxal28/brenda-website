@@ -10,8 +10,11 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("http://www.drodd.com/images14/white-wallpaper13.jpg");
+  background-image: url("http://i.imgur.com/LJcvVUf.jpg");
+  background-color: teal;
+  background-blend-mode: multiply;
   background-attachment: fixed;
+  background-size: cover;
   position: relative; }
   @media only screen and (max-width: 480px) {
     section {
@@ -22,19 +25,32 @@ section {
     width: 50vw;
     background: dodgerblue; }
   section.about {
-    height: 60vh; }
+    height: 60vh;
+    max-width: 960px;
+    margin: 0 auto; }
+    @media only screen and (max-width: 480px) {
+      section.about {
+        height: 70vh; } }
   section.categories {
-    height: 40vh; }
+    max-width: 960px;
+    margin: 0 auto;
+    height: auto; }
   section.gallery {
     background: cornflowerblue; }
   section.characters {
     background: cornflowerblue; }
   section.contact {
-    height: 90vh;
-    overflow: hidden; }
+    height: 100vh; }
   section.footer {
-    height: 10vh;
-    background: deepskyblue; }
+    height: 12vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: transparent; }
+  @media only screen and (max-width: 480px) {
+    section.hide-mobile {
+      display: none; } }
 
 .button-row {
   margin: 20px auto;
@@ -66,7 +82,7 @@ section {
   .primary-theme strong {
     color: gold; }
   .primary-theme p {
-    color: #333; }
+    color: white; }
   .primary-theme button {
     color: deepskyblue;
     border-color: deepskyblue; }
