@@ -7,24 +7,18 @@ export class BookNowSection extends React.Component {
 
 				<div className="container">
 					<div className="row">
-						<div className="col-sm-6">
+						<div className="col-xs-12">
 							<h1>Book Now</h1>
-							<h3>Select A Date!</h3>
+							<h3>Select A Date</h3>
 						</div>
 
-						{/*//todo -- book now flow*/}
-						{/*step 1 -- select date*/}
-						{/*step 2 - select characters*/}
-						{/*step 3 - fill out contact info*/}
+						<div className="col-xs-12">
 
-						<div className="col-sm-6">
-							{/*<input type="text" placeholder="Full Name"/>*/}
-							{/*<input type="text" placeholder="Email"/>*/}
-							<input type="text" placeholder="Date Selector"/>
-							{/*<input type="text" placeholder="Characters Dropdown"/>*/}
-							{/*<textarea rows="4" placeholder="Message here..."/>*/}
+							<div className="input-block">
+								<input type="text" placeholder="Select Date"/>
+							</div>
 							<div className="button-row">
-								<button>Send!</button>
+								<button>Next</button>
 							</div>
 
 						</div>

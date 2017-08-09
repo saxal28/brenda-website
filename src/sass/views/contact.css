@@ -1,9 +1,5 @@
-section.contact {
-  align-items: inherit; }
-  section.contact .row {
-    height: 100%;
-    overflow-x: hidden; }
-    section.contact .row .col-xs-12 {
-      text-align: center; }
-    section.contact .row h2, section.contact .row h3 {
-      margin: 20px auto; }
+section.contact .col-xs-12, section.gallery .col-xs-12 {
+  text-align: center; }
+
+section.contact h2, section.contact h3, section.gallery h2, section.gallery h3 {
+  margin: 5px auto; }

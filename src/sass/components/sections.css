@@ -11,7 +11,6 @@
 section {
   height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-image: url("http://i.imgur.com/c8yTj5q.jpg");
@@ -23,21 +22,20 @@ section {
   @media only screen and (max-width: 480px) {
     section {
       background-size: cover; } }
+  @media only screen and (max-width: 480px) {
+    section.home {
+      flex-direction: row; } }
   section.home .overlay {
     color: white;
     right: inherit;
     width: 50vw;
     background: dodgerblue; }
   section.about {
-    height: 60vh;
-    max-width: 960px;
-    margin: 0 auto; }
+    height: 50vh; }
     @media only screen and (max-width: 480px) {
       section.about {
         height: 70vh; } }
   section.categories {
-    max-width: 960px;
-    margin: 0 auto;
     height: auto; }
   section.contact {
     height: 100vh; }

@@ -7,13 +7,14 @@
 }
 
 .container {
+	
 	@include respond-to($phone) { width: 100% }
 }
 
 section {
 	height: 100vh;
 	display: flex;
-	flex-direction: column;
+	//flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	
@@ -31,6 +32,8 @@ section {
 	
 	&.home {
 		
+		@include respond-to($phone) { flex-direction: row }
+		
 		.overlay {
 			color: white;
 			right: inherit;
@@ -39,14 +42,13 @@ section {
 		}
 	}
 	&.about {
-		height: 60vh; max-width: 960px; margin: 0 auto;
+		height: 50vh;
+		
 		@include respond-to($phone) {
 			height:  70vh;
 		}
 	}
-	&.categories { max-width: 960px; margin: 0 auto; height: auto; }
-	//&.gallery { background: cornflowerblue }
-	//&.characters { background: cornflowerblue }
+	&.categories { height: auto; }
 	&.contact {  height: 100vh; }
 	&.footer { height: 12vh; position: fixed; bottom: 0; left: 0; right: 0; background: transparent }
 	

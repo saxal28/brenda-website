@@ -10,7 +10,8 @@ export class Navbar extends React.Component {
 			<div className="navbar">
 
 				<i className="fa fa-bars nav-menu-button"  onClick={toggleMenuOverlay}/>
-				<NavLink to="/" className="nav-link" exact>home</NavLink>
+
+				<NavLink className="nav-link brand-name" to="/" exact>Happily Ever After STL</NavLink>
 				<NavLink to="/gallery" className="nav-link" strict>gallery</NavLink>
 				<NavLink to="/characters" className="nav-link" strict>characters</NavLink>
 				<NavLink to="/contact" className="nav-link" strict>contact</NavLink>

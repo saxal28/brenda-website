@@ -11,7 +11,6 @@
 section {
   height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-image: url("http://i.imgur.com/c8yTj5q.jpg");
@@ -23,21 +22,20 @@ section {
   @media only screen and (max-width: 480px) {
     section {
       background-size: cover; } }
+  @media only screen and (max-width: 480px) {
+    section.home {
+      flex-direction: row; } }
   section.home .overlay {
     color: white;
     right: inherit;
     width: 50vw;
     background: dodgerblue; }
   section.about {
-    height: 60vh;
-    max-width: 960px;
-    margin: 0 auto; }
+    height: 50vh; }
     @media only screen and (max-width: 480px) {
       section.about {
         height: 70vh; } }
   section.categories {
-    max-width: 960px;
-    margin: 0 auto;
     height: auto; }
   section.contact {
     height: 100vh; }
@@ -143,6 +141,7 @@ button {
   .navbar .nav-menu-button {
     display: none;
     font-size: 24px;
+    padding: 10px;
     z-index: 205; }
     @media only screen and (max-width: 480px) {
       .navbar .nav-menu-button {
@@ -157,6 +156,10 @@ button {
     cursor: pointer;
     transition: all 400ms;
     text-decoration: none !important; }
+    .navbar .nav-link.brand-name {
+      position: absolute;
+      left: 20px;
+      border-bottom: 3px solid white; }
     @media only screen and (max-width: 480px) {
       .navbar .nav-link {
         display: none; } }
@@ -187,6 +190,9 @@ button {
   position: relative;
   background: dodgerblue;
   background-size: cover   !important; }
+  @media only screen and (max-width: 480px) {
+    .category-box {
+      height: 33.3333vh; } }
   .category-box.gallery {
     background: url("http://i.imgur.com/CX5QmN2.jpg"); }
   .category-box.cast {
@@ -238,6 +244,9 @@ input[type=text], textarea {
   margin: 10px auto;
   resize: none; }
 
+.input-block {
+  text-align: center; }
+
 textarea, input, button {
   outline: none; }
 
@@ -287,15 +296,11 @@ textarea, input, button {
   .menu-overlay .menu-container {
     height: 60vh; }
 
-section.contact {
-  align-items: inherit; }
-  section.contact .row {
-    height: 100%;
-    overflow-x: hidden; }
-    section.contact .row .col-xs-12 {
-      text-align: center; }
-    section.contact .row h2, section.contact .row h3 {
-      margin: 20px auto; }
+section.contact .col-xs-12, section.gallery .col-xs-12 {
+  text-align: center; }
+
+section.contact h2, section.contact h3, section.gallery h2, section.gallery h3 {
+  margin: 5px auto; }
 
 section.gallery {
   overflow: hidden;

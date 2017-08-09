@@ -1,4 +1,5 @@
 @import "../colors.scss";
+@import "../media.scss";
 
 .category-row {
 	display: flex;
@@ -16,6 +17,8 @@
 	margin: 0 auto;
 	
 	height: 40vh;
+	
+	@include respond-to($phone) { height: 33.3333vh }
 	
 	position: relative;
 	background: $primary-hover;

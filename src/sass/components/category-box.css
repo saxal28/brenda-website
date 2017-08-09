@@ -13,6 +13,9 @@
   position: relative;
   background: dodgerblue;
   background-size: cover   !important; }
+  @media only screen and (max-width: 480px) {
+    .category-box {
+      height: 33.3333vh; } }
   .category-box.gallery {
     background: url("http://i.imgur.com/CX5QmN2.jpg"); }
   .category-box.cast {

@@ -22,6 +22,7 @@
 	.nav-menu-button {
 		display: none;
 		font-size: 24px;
+		padding: 10px;
 		
 		z-index: 205;
 		
@@ -39,6 +40,12 @@
 		border-bottom: 3px solid transparent;
 		cursor: pointer;
 		transition: all 400ms;
+		
+		&.brand-name {
+			position: absolute;
+			left: 20px;
+			border-bottom: 3px solid white;
+		}
 		
 		text-decoration: none !important;
 		

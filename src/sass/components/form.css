@@ -8,5 +8,8 @@ input[type=text], textarea {
   margin: 10px auto;
   resize: none; }
 
+.input-block {
+  text-align: center; }
+
 textarea, input, button {
   outline: none; }
