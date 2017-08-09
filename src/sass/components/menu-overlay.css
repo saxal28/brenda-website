@@ -7,7 +7,7 @@
   opacity: 0.9;
   z-index: 99;
   overflow: hidden;
-  background: teal; }
+  background: #333; }
   .menu-overlay body {
     display: none; }
   .menu-overlay .overlay-link {

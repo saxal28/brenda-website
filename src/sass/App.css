@@ -14,7 +14,7 @@ section {
   justify-content: center;
   align-items: center;
   background-image: url("http://i.imgur.com/c8yTj5q.jpg");
-  background-color: teal;
+  background-color: deeppink;
   background-blend-mode: multiply;
   background-size: cover;
   background-attachment: fixed;
@@ -279,7 +279,7 @@ textarea, input, button {
   opacity: 0.9;
   z-index: 99;
   overflow: hidden;
-  background: teal; }
+  background: #333; }
   .menu-overlay body {
     display: none; }
   .menu-overlay .overlay-link {
@@ -312,10 +312,11 @@ section.gallery {
     justify-content: center;
     align-items: center; }
     section.gallery .gallery-button span {
+      user-select: none;
       padding: 10px 16px;
       border-radius: 50%;
       cursor: pointer;
-      margin: 0 10px;
+      margin: 0 20px;
       border: 2px solid white; }
     section.gallery .gallery-button.previous {
       left: 0; }
@@ -331,7 +332,7 @@ section.gallery {
     width: 100%;
     overflow: hidden; }
     section.gallery .gallery-container img {
-      height: 80%;
+      height: 60%;
       box-shadow: 3px 3px 12px black; }
 
 @font-face {
