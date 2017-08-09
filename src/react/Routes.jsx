@@ -2,7 +2,7 @@ import React from "react";
 import { Route } from 'react-router-dom';
 import {HomeSection} from "./sections/HomeSection";
 import {ContactSection} from "./sections/ContactSection";
-import {GallerySection} from "./sections/GallerySection";
+import GallerySection from "./sections/GallerySection";
 import {CharacterSection} from "./sections/CharacterSection";
 import {BookNowSection} from "./sections/BookNowSection";
 

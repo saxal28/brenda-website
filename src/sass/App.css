@@ -4,17 +4,21 @@
   to {
     background-position: 100% 0; } }
 
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 100%; } }
+
 section {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("http://i.imgur.com/LJcvVUf.jpg");
+  background-image: url("http://i.imgur.com/c8yTj5q.jpg");
   background-color: teal;
   background-blend-mode: multiply;
-  background-attachment: fixed;
   background-size: cover;
+  background-attachment: fixed;
   position: relative; }
   @media only screen and (max-width: 480px) {
     section {
@@ -35,10 +39,6 @@ section {
     max-width: 960px;
     margin: 0 auto;
     height: auto; }
-  section.gallery {
-    background: cornflowerblue; }
-  section.characters {
-    background: cornflowerblue; }
   section.contact {
     height: 100vh; }
   section.footer {
@@ -117,7 +117,7 @@ button {
   border: 2px solid white;
   background: transparent;
   margin: 0 6px;
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 400ms ease-in-out; }
@@ -222,7 +222,7 @@ button {
   display: flex;
   justify-content: center; }
   .social-media-row .fa {
-    font-size: 50px;
+    font-size: 40px;
     color: white;
     padding: 10px;
     border-radius: 50%;
@@ -270,7 +270,7 @@ textarea, input, button {
   opacity: 0.9;
   z-index: 99;
   overflow: hidden;
-  background: dodgerblue; }
+  background: teal; }
   .menu-overlay body {
     display: none; }
   .menu-overlay .overlay-link {
@@ -279,19 +279,55 @@ textarea, input, button {
     padding: 8px;
     border-bottom: 2px solid transparent;
     text-decoration: none;
-    width: 120px;
     text-align: center;
+    font-size: 28px;
     transition: all 300ms; }
     .menu-overlay .overlay-link:hover {
       border-bottom-color: white; }
   .menu-overlay .menu-container {
     height: 60vh; }
 
-section.contact .row {
-  height: 100%;
-  overflow-x: hidden; }
-  section.contact .row h2, section.contact .row h3 {
-    margin: 20px auto; }
+section.contact {
+  align-items: inherit; }
+  section.contact .row {
+    height: 100%;
+    overflow-x: hidden; }
+    section.contact .row .col-xs-12 {
+      text-align: center; }
+    section.contact .row h2, section.contact .row h3 {
+      margin: 20px auto; }
+
+section.gallery {
+  overflow: hidden;
+  justify-content: flex-end; }
+  section.gallery .gallery-button {
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    section.gallery .gallery-button span {
+      padding: 10px 16px;
+      border-radius: 50%;
+      cursor: pointer;
+      margin: 0 10px;
+      border: 2px solid white; }
+    section.gallery .gallery-button.previous {
+      left: 0; }
+    section.gallery .gallery-button.next {
+      right: 0; }
+  section.gallery .gallery-container {
+    height: 100vh;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    overflow: hidden; }
+    section.gallery .gallery-container img {
+      height: 80%;
+      box-shadow: 3px 3px 12px black; }
 
 @font-face {
   font-family: "High Tide - Demo";
@@ -303,7 +339,7 @@ section.contact .row {
 
 h1 {
   font-family: "High Tide - Demo";
-  font-size: 70px;
+  font-size: 60px;
   color: white;
   max-width: 700px;
   margin: 0 auto;
@@ -329,7 +365,7 @@ h2 {
       line-height: 45px; } }
 
 p {
-  font-size: 16px;
+  font-size: 15px;
   color: white;
   line-height: 32px;
   width: 70%;
@@ -357,10 +393,4 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: cadetblue;
-  height: 100%;
-  overflow: auto; }
-
-html {
-  height: 100%;
-  overflow: hidden; }
+  background: cadetblue; }

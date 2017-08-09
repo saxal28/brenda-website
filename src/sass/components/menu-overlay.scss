@@ -13,19 +13,18 @@
 	
 	overflow: hidden;
 	
-	background: $primary-hover;
+	background: teal;
 	
 	body { display: none }
 	
 	.overlay-link {
 		color: white !important;
-		//font-weight: inherit;
 		margin: 5px auto;
 		padding: 8px;
 		border-bottom: 2px solid transparent;
 		text-decoration: none;
-		width: 120px;
 		text-align: center;
+		font-size: 28px;
 		
 		transition: all 300ms;
 		

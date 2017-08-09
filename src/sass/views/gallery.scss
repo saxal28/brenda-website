@@ -1,0 +1,50 @@
+section.gallery {
+	
+	overflow: hidden;
+	justify-content: flex-end;
+	
+	.gallery-button {
+		position:fixed;
+		height: 100vh;
+		
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+		span {
+			padding: 10px 16px;
+			border-radius: 50%;
+			cursor: pointer;
+			margin: 0 10px;
+			
+			border: 2px solid white;
+		}
+		
+		&.previous { left: 0 }
+		&.next { right: 0 }
+		
+	}
+	
+	.gallery-container {
+		
+		height:100vh;
+		padding: 50px 20px;
+		
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background:rgba(0,0,0,0.5);
+		
+		width:100%;
+		overflow: hidden;
+		
+		
+		
+		img {
+			height:80%;
+			box-shadow: 3px 3px 12px black;
+			//width:100%;
+		}
+		
+	}
+}
