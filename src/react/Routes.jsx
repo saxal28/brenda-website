@@ -4,7 +4,7 @@ import {HomeSection} from "./sections/HomeSection";
 import {ContactSection} from "./sections/ContactSection";
 import GallerySection from "./sections/GallerySection";
 import {CharacterSection} from "./sections/CharacterSection";
-import {BookNowSection} from "./sections/BookNowSection";
+import BookNowSection from "./sections/BookNowSection";
 
 export class Routes extends React.Component {
 

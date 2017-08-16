@@ -1,15 +1,24 @@
 input[type=text], textarea {
-  max-width: 400px;
-  width: 90%;
   background: transparent;
-  border: 2px solid white;
   padding: 10px 5px;
   padding-left: 15px;
-  margin: 10px auto;
-  resize: none; }
+  resize: none;
+  width: 80%;
+  border: none; }
 
 .input-block {
-  text-align: center; }
+  position: relative;
+  text-align: left;
+  max-width: 400px;
+  width: 90%;
+  margin: 10px auto;
+  border: 2px solid white;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .input-block .fa {
+    margin-right: 10px; }
 
 textarea, input, button {
   outline: none; }

@@ -46,6 +46,7 @@ export default observer(class GallerySection extends React.Component {
 		let { content } = store;
 		const uids = _.keys(content);
 		const values = _.values(content);
+
 		values.map((x, index) => {
 			x.uid = uids[index];
 		})
@@ -56,22 +57,13 @@ export default observer(class GallerySection extends React.Component {
 		return (
 			<section className="gallery">
 
-
-
 					<div className="gallery-container">
-						{values.length> 0 && <img src={values[currentImage].url} />}
+						{values.length> 0 && <img src={values[currentImage].url} alt="gallery" />}
 						<div className="gallery-button previous" onClick={() => this.previousImage(values)}><span>-</span></div>
 						<div className="gallery-button next" onClick={() => this.nextImage(values)}><span>+</span></div>
 					</div>
-
 
 			</section>
 		)
 	}
 })
-
-
-const imageStyle = {
-	backgroundSize: 'cover',
-	backgroundPosition: 'center',
-}

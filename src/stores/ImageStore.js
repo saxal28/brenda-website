@@ -1,4 +1,4 @@
-import { observable, extendObservable } from "mobx";
+import { extendObservable } from "mobx";
 import firebase from 'firebase';
 
 export class ImageStore {
@@ -28,6 +28,8 @@ export class ImageStore {
 			case "url":
 				console.log(field, e.target.value)
 				return this.image.url = e.target.value;
+			default:
+				return true
 		}
 
 	}
