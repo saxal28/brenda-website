@@ -2,18 +2,18 @@ import React from "react";
 import {observer} from "mobx-react";
 import {ValidationIcon} from "../components/ValidationIcon";
 import {BookNowStore} from "../../stores/BookNowStore";
-import {TestEmail} from "../emails/TestEmail";
-import axios from 'axios'
-import {SendContactEmail} from "../../lib/API/EmailApi";
-
-const viewStore = new BookNowStore();
-const {handleChange, store, sendEmail} = viewStore;
+import DatePicker from "react-datepicker";
+import 'react-datepicker/dist/react-datepicker.css';
+import moment from 'moment'
+export const bookNowStore = new BookNowStore();
+const {handleChange, store, sendEmail, selectDate} = bookNowStore;
 
 const Steps = {
 	SelectDate: "SelectDate",
+	SelectTime: "Select Time",
 	SelectCharacters: "SelectCharacters",
 	EnterContactInfo: "EnterContactInfo",
-	Review: "Review"
+	Review: "Review",
 }
 
 const handleSubmit = e =>  {
@@ -25,7 +25,7 @@ const submitBookNowRequest = () => sendEmail()
 
 const isCompleted = value => value && value.length !== 0 ? true : false
 
-const {SelectDate, SelectCharacters, EnterContactInfo, Review} = Steps;
+const {SelectDate, SelectTime, SelectCharacters, EnterContactInfo, Review} = Steps;
 
 
 export default observer(class BookNowSection extends React.Component {
@@ -51,6 +51,8 @@ export default observer(class BookNowSection extends React.Component {
 				return "Select A Date";
 			case SelectCharacters:
 				return "Select Characters";
+			case SelectTime:
+				return "Select Event Times";
 			case EnterContactInfo:
 				return "Enter Contact Info";
 			case Review:
@@ -66,13 +68,15 @@ export default observer(class BookNowSection extends React.Component {
 		const toStep = this.toStep.bind(this)
 		const getStepTitle = this.getStepTitle.bind(this)
 
-		const {selectedDate, selectedCharacters, fullName, email, notes} = store
+		const {selectedDate, selectedTime, fullName, email, notes } = store
+		const {emailSent} = bookNowStore
 
+		const date = moment(selectedDate).format("MMM DD, YYYY")
+		
+		console.log('email sent', emailSent)
 
 		return (
 			<section className="contact">
-
-				<TestEmail/>
 
 				<div className="container">
 					<div className="row">
@@ -85,27 +89,35 @@ export default observer(class BookNowSection extends React.Component {
 
 							<form onSubmit={handleSubmit}>
 
-								{activeStep(SelectDate) && <div>
-								<div className="input-block">
-									<input type="text" placeholder="Select Date" onChange={(e) => handleChange("selectedDate", e)} autoFocus="autofocus"/>
-									<ValidationIcon completed={isCompleted(selectedDate)}/>
-								</div>
-								<div className="button-row">
-									<button onClick={() => toStep(SelectCharacters)}>Next</button>
-								</div>
-									</div>}
-
-								{activeStep(SelectCharacters) && <div>
+								{activeStep(SelectDate) &&
+								<div>
 									<div className="input-block">
-										<input type="text" placeholder="Select Characters" onChange={(e) => handleChange("selectedCharacters", e)} autoFocus="autofocus"/>
-										<ValidationIcon completed={isCompleted(selectedCharacters)}/>
+										{/*<input type="text" placeholder="Select Date" onChange={(e) => handleChange("selectedDate", e)} autoFocus="autofocus"/>*/}
+										<DatePicker
+											selected={selectedDate}
+											onChange={selectDate}
+											withPortal
+										/>
+										<ValidationIcon completed={isCompleted(selectedDate)}/>
+									</div>
+									<div className="button-row">
+										<button onClick={() => toStep(SelectTime)}>Next</button>
+									</div>
+								</div>}
+
+								{activeStep(SelectTime) &&
+								<div>
+									<div className="input-block">
+										{/*<input type="text" placeholder="Select Date" onChange={(e) => handleChange("selectedDate", e)} autoFocus="autofocus"/>*/}
+										<ValidationIcon completed={isCompleted(selectedDate)}/>
 									</div>
 									<div className="button-row">
 										<button onClick={() => toStep(EnterContactInfo)}>Next</button>
 									</div>
 								</div>}
 
-								{activeStep(EnterContactInfo) && <div>
+								{activeStep(EnterContactInfo) &&
+								<div>
 									<div className="input-block">
 										<input type="text" placeholder="Full Name" onChange={(e) => handleChange("fullName", e)} autoFocus="autofocus"/>
 										<ValidationIcon completed={isCompleted(fullName)}/>
@@ -123,14 +135,11 @@ export default observer(class BookNowSection extends React.Component {
 									</div>
 								</div>}
 
-								{activeStep(Review) && <div>
+								{activeStep(Review) &&
+								<div>
 									<div className="input-block">
-										<input type="text" placeholder="Selected Date" value={selectedDate} />
+										<input type="text" placeholder="Selected Date" value={date} />
 										<ValidationIcon completed={isCompleted(selectedDate)}/>
-									</div>
-									<div className="input-block">
-										<input type="text" placeholder="Selected Characters" value={selectedCharacters}/>
-										<ValidationIcon completed={isCompleted(selectedCharacters)}/>
 									</div>
 									<div className="input-block">
 										<input type="text" placeholder="Full Name" value={fullName}/>
@@ -145,9 +154,11 @@ export default observer(class BookNowSection extends React.Component {
 										<ValidationIcon completed={isCompleted(notes)}/>
 									</div>
 									<div className="button-row">
-										<button onClick={submitBookNowRequest}>Submit!</button>
+										{!emailSent && <button onClick={submitBookNowRequest}>Submit</button>}
+										{emailSent && <button className="active" >Booking Received!</button>}
 									</div>
 								</div>}
+
 							</form>
 
 						</div>

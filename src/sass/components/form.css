@@ -19,6 +19,8 @@ input[type=text], textarea {
   align-items: center; }
   .input-block .fa {
     margin-right: 10px; }
+    .input-block .fa.fa-check {
+      color: deepskyblue; }
 
 textarea, input, button {
   outline: none; }

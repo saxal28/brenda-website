@@ -23,3 +23,5 @@ export const initializeFirebase = () => {
 //===============================================================
 //        Other Future Config / Express / MongoDB / ...etc
 //===============================================================
+
+export const AccountEmail = "saxal28@gmail.com"

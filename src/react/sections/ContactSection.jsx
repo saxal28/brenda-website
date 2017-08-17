@@ -1,19 +1,27 @@
 import React from "react";
 import {ContactStore} from "../../stores/ContactStore";
+import {observer} from "mobx-react";
 
-const viewStore = new ContactStore();
-const {handleChange, store, sendEmail} = viewStore;
+export const contactStore = new ContactStore();
+const {handleChange, store, sendEmail} = contactStore;
 
-export class ContactSection extends React.Component {
+const submitContact = () => sendEmail()
+
+export default observer(class ContactSection extends React.Component {
+
 	render() {
+
+		const {emailSent} = contactStore
+		console.log("email sent", emailSent)
+
 		return (
 				<section className="contact">
 
 					<div className="container">
 						<div className="row">
 							<div className="col-xs-12">
-								<h1>Have Questions<span className="question-mark">?</span></h1>
-								<h2>Send us a message</h2>
+								<h1>Have A Question<span className="question-mark">?</span></h1>
+								<h3>Send us a message</h3>
 							</div>
 
 							<div className="col-xs-12">
@@ -30,7 +38,8 @@ export class ContactSection extends React.Component {
 									<textarea rows="4" placeholder="Message here..." onChange={(e) => handleChange('text', e)}/>
 								</div>
 								<div className="button-row">
-									<button onClick={sendEmail}>Send!</button>
+									{!emailSent && <button onClick={submitContact}>Send</button>}
+									{emailSent && <button className="active">Email Sent!</button>}
 								</div>
 
 							</div>
@@ -42,4 +51,4 @@ export class ContactSection extends React.Component {
 
 		)
 	}
-}
+})

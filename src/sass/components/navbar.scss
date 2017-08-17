@@ -22,7 +22,7 @@
 	.nav-menu-button {
 		display: none;
 		font-size: 24px;
-		padding: 10px;
+		padding: 10px 20px;
 		
 		z-index: 205;
 		
@@ -44,7 +44,7 @@
 		&.brand-name {
 			position: absolute;
 			left: 20px;
-			border-bottom: 3px solid white;
+			border-bottom: 2px solid white;
 		}
 		
 		text-decoration: none !important;
@@ -66,6 +66,8 @@
 		&.button {
 			margin-left:10px;
 			border: 2px solid white;
+			padding-left: 10px;
+			padding-right: 10px;
 			&:hover { background: white }
 		}
 		
