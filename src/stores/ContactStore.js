@@ -33,7 +33,7 @@ export class ContactStore {
 					to: AccountEmail,
 					from: fullName,
 					subject,
-					text: `${text} from ${email}`,
+					text: `Hey Brenda, You Have A New Message!${"\n\n"}${text}${"\n\n"}sent from - ${fullName} at ${email}`,
 				}
 
 				SendContactEmail(contactEmail);

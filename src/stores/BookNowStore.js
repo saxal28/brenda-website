@@ -2,6 +2,7 @@ import { extendObservable, action } from "mobx";
 import {sendTestMail} from "../lib/emails";
 import {AccountEmail} from "../app-config";
 import {SendBookNowEmail} from "../lib/API/EmailApi";
+import moment from "moment";
 
 export class BookNowStore {
 
@@ -39,15 +40,9 @@ export class BookNowStore {
 				const bookNowEmail = {
 					"to": AccountEmail,
 					"from": "Alan Sax",
-					"subject": `You have a new booking for ${selectedDate}!`,
-					"text": `Hey Brenda, you have   a new booking! Follow the link for more details!
-					
-							Quick Summary: ${fullName} has booked a party for ${selectedDate} and has requested the following characters: ${selectedCharacter}.
-							 
-							They even left some notes: ${notes}
-							 
-							Contact them at this email ${email}
-							`,
+					"subject": `You have a new booking for ${moment(selectedDate).format("MMM-DD")}!`,
+					"text": `Hey Brenda, You Have A New Booking!${"\n\n"}Quick Summary:${"\n"}${fullName} has booked a party for ${moment(selectedDate).format("MMM-DD")} at time.${"\n\n"}They even left some notes:${"\n"}${notes}${"\n\n"}Contact ${fullName} at this email ${email}!
+					`,
 				}
 
 				SendBookNowEmail(bookNowEmail);
