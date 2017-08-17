@@ -21,9 +21,7 @@ const handleSubmit = e =>  {
 	console.log("submit")
 }
 
-const submitBookNowRequest = () => {
-	sendEmail()
-}
+const submitBookNowRequest = () => sendEmail()
 
 const isCompleted = value => value && value.length !== 0 ? true : false
 
@@ -62,17 +60,6 @@ export default observer(class BookNowSection extends React.Component {
 		}
 	}
 
-	componentWillMount() {
-		console.log("hi")
-		axios.get("https://us-central1-brenda-website.cloudfunctions.net/addMessage")
-			.then(() => console.log("success"))
-			.catch(e => console.log(e))
-
-		axios.post("https://us-central1-brenda-website.cloudfunctions.net/addMessage")
-			.then(() => console.log("success"))
-			.catch(e => console.log(e))
-	}
-
 	render() {
 
 		const activeStep = this.activeStep.bind(this)
@@ -100,7 +87,7 @@ export default observer(class BookNowSection extends React.Component {
 
 								{activeStep(SelectDate) && <div>
 								<div className="input-block">
-									<input type="text" placeholder="Select Date" onChange={(e) => handleChange("selectedDate", e)}/>
+									<input type="text" placeholder="Select Date" onChange={(e) => handleChange("selectedDate", e)} autoFocus="autofocus"/>
 									<ValidationIcon completed={isCompleted(selectedDate)}/>
 								</div>
 								<div className="button-row">
@@ -110,7 +97,7 @@ export default observer(class BookNowSection extends React.Component {
 
 								{activeStep(SelectCharacters) && <div>
 									<div className="input-block">
-										<input type="text" placeholder="Select Characters" onChange={(e) => handleChange("selectedCharacters", e)}/>
+										<input type="text" placeholder="Select Characters" onChange={(e) => handleChange("selectedCharacters", e)} autoFocus="autofocus"/>
 										<ValidationIcon completed={isCompleted(selectedCharacters)}/>
 									</div>
 									<div className="button-row">
@@ -120,7 +107,7 @@ export default observer(class BookNowSection extends React.Component {
 
 								{activeStep(EnterContactInfo) && <div>
 									<div className="input-block">
-										<input type="text" placeholder="Full Name" onChange={(e) => handleChange("fullName", e)}/>
+										<input type="text" placeholder="Full Name" onChange={(e) => handleChange("fullName", e)} autoFocus="autofocus"/>
 										<ValidationIcon completed={isCompleted(fullName)}/>
 									</div>
 									<div className="input-block">
@@ -138,7 +125,7 @@ export default observer(class BookNowSection extends React.Component {
 
 								{activeStep(Review) && <div>
 									<div className="input-block">
-										<input type="text" placeholder="Selected Date" value={selectedDate}/>
+										<input type="text" placeholder="Selected Date" value={selectedDate} />
 										<ValidationIcon completed={isCompleted(selectedDate)}/>
 									</div>
 									<div className="input-block">

@@ -1,4 +1,8 @@
 import React from "react";
+import {ContactStore} from "../../stores/ContactStore";
+
+const viewStore = new ContactStore();
+const {handleChange, store, sendEmail} = viewStore;
 
 export class ContactSection extends React.Component {
 	render() {
@@ -14,19 +18,19 @@ export class ContactSection extends React.Component {
 
 							<div className="col-xs-12">
 								<div className="input-block">
-									<input type="text" placeholder="Full Name"/>
+									<input type="text" placeholder="Full Name" onChange={(e) => handleChange('fullName', e)}/>
 								</div>
 								<div className="input-block">
-									<input type="text" placeholder="Email"/>
+									<input type="text" placeholder="Email" onChange={(e) => handleChange('email', e)}/>
 								</div>
 								<div className="input-block">
-									<input type="text" placeholder="Subject"/>
+									<input type="text" placeholder="Subject" onChange={(e) => handleChange('subject', e)}/>
 								</div>
 								<div className="input-block">
-									<textarea rows="4" placeholder="Message here..."/>
+									<textarea rows="4" placeholder="Message here..." onChange={(e) => handleChange('text', e)}/>
 								</div>
 								<div className="button-row">
-									<button>Send!</button>
+									<button onClick={sendEmail}>Send!</button>
 								</div>
 
 							</div>
