@@ -3,6 +3,8 @@ import firebase from "firebase";
 import _ from "lodash";
 import { observer } from "mobx-react";
 import {ImageStore} from "../../stores/ImageStore";
+import FileUploader from 'react-firebase-file-uploader';
+
 // import {UploadButton} from "./common/UploadButton";
 
 const store = new ImageStore();
@@ -11,11 +13,24 @@ export default observer(class GallerySection extends React.Component {
 
 	state = { currentImage: 0 }
 
+	handleChangeUsername = (event) => this.setState({username: event.target.value});
+	handleUploadStart = () => this.setState({isUploading: true, progress: 0});
+	handleProgress = (progress) => this.setState({progress});
+	handleUploadError = (error) => {
+		this.setState({isUploading: false});
+		console.error(error);
+	}
+	handleUploadSuccess = (filename) => {
+		this.setState({avatar: filename, progress: 100, isUploading: false});
+		firebase.database().ref('images').child(filename).getDownloadURL().then(url => this.setState({avatarURL: url}));
+	};
+
 	componentWillMount() {
 
 		firebase.database().ref("images").on("value", snapshot => {
 			store.content = snapshot.val();
 		})
+
 	}
 
 	nextImage(values) {
@@ -41,6 +56,8 @@ export default observer(class GallerySection extends React.Component {
 
 	render() {
 
+		console.log(firebase.storage().ref())
+
 		const {currentImage} = this.state;
 
 		let { content } = store;
@@ -61,7 +78,20 @@ export default observer(class GallerySection extends React.Component {
 						{values.length> 0 && <img src={values[currentImage].url} alt="gallery" />}
 						<div className="gallery-button previous" onClick={() => this.previousImage(values)}><span>-</span></div>
 						<div className="gallery-button next" onClick={() => this.nextImage(values)}><span>+</span></div>
+
+						{/*<FileUploader*/}
+							{/*accept="image/*"*/}
+							{/*name="avatar"*/}
+							{/*randomizeFilename*/}
+							{/*storageRef={firebase.storage().ref()}*/}
+							{/*onUploadStart={this.handleUploadStart}*/}
+							{/*onUploadError={this.handleUploadError}*/}
+							{/*onUploadSuccess={this.handleUploadSuccess}*/}
+							{/*onProgress={this.handleProgress}*/}
+						{/*/>*/}
+
 					</div>
+
 
 			</section>
 		)

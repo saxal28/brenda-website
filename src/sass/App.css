@@ -13,7 +13,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("https://cdn.pixabay.com/photo/2017/07/08/09/45/joy-2483926_1280.jpg");
+  background-image: url("http://i.imgur.com/jhkoXzR.jpg");
   background-color: grey;
   background-blend-mode: multiply;
   background-size: cover;
@@ -357,7 +357,7 @@ section.gallery {
   src: url("../assets/Andale Mono.ttf"); }
 
 h1 {
-  font-family: "High Tide - Demo";
+  font-family: "Amatica SC";
   font-size: 60px;
   color: white;
   max-width: 700px;
@@ -371,7 +371,7 @@ h1 {
       line-height: 65px; } }
 
 h2 {
-  font-family: "High Tide - Demo";
+  font-family: "Amatic SC";
   font-size: 45px;
   color: white;
   max-width: 700px;
@@ -383,6 +383,9 @@ h2 {
       font-size: 25px;
       line-height: 45px; } }
 
+h3 {
+  font-family: "Amatic SC"; }
+
 p {
   font-size: 15px;
   color: white;
@@ -392,7 +395,7 @@ p {
 
 strong {
   color: deepskyblue;
-  font-family: "High Tide - Demo"; }
+  font-family: "Amatic SC"; }
 
 .question-mark {
   font-size: 40px;

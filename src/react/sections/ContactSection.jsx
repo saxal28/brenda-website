@@ -20,7 +20,7 @@ export default observer(class ContactSection extends React.Component {
 					<div className="container">
 						<div className="row">
 							<div className="col-xs-12">
-								<h1>Have A Question<span className="question-mark">?</span></h1>
+								<h1>Have A Question?</h1>
 								<h3>Send us a message</h3>
 							</div>
 

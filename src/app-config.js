@@ -11,7 +11,7 @@ export const initializeFirebase = () => {
 		authDomain: "brenda-website.firebaseapp.com",
 		databaseURL: "https://brenda-website.firebaseio.com",
 		projectId: "brenda-website",
-		storageBucket: "",
+		storageBucket: "gs://brenda-website.appspot.com/",
 		messagingSenderId: "402688962319"
 	};
 

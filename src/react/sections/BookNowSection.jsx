@@ -81,8 +81,8 @@ export default observer(class BookNowSection extends React.Component {
 				<div className="container">
 					<div className="row">
 						<div className="col-xs-12">
-							<h1>Book Now</h1>
-							<h3>{getStepTitle()}</h3>
+							<h1>Request A Booking</h1>
+							<h2>{getStepTitle()}</h2>
 						</div>
 
 						<div className="col-xs-12">
