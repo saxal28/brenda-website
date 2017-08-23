@@ -23,7 +23,6 @@
     color: white;
     padding: 4px;
     text-transform: uppercase;
-    font-family: "Andale Mono";
     border-bottom: 3px solid transparent;
     cursor: pointer;
     transition: all 400ms;
@@ -31,7 +30,7 @@
     .navbar .nav-link.brand-name {
       position: absolute;
       left: 20px;
-      border-bottom: 2px solid white; }
+      border-bottom: none; }
     @media only screen and (max-width: 480px) {
       .navbar .nav-link {
         display: none; } }
@@ -47,4 +46,6 @@
       padding-left: 10px;
       padding-right: 10px; }
       .navbar .nav-link.button:hover {
+        background: white; }
+      .navbar .nav-link.button.active {
         background: white; }
