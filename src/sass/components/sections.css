@@ -14,7 +14,7 @@ section {
   justify-content: center;
   align-items: center;
   background-image: url("http://i.imgur.com/jhkoXzR.jpg");
-  background-color: grey;
+  background-color: slategray;
   background-blend-mode: multiply;
   background-size: cover;
   background-attachment: fixed;

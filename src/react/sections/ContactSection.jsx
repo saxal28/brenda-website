@@ -11,8 +11,7 @@ export default observer(class ContactSection extends React.Component {
 
 	render() {
 
-		const {emailSent} = contactStore
-		console.log("email sent", emailSent)
+		const {emailSent, emailSending} = contactStore
 
 		return (
 				<section className="contact">
@@ -21,7 +20,7 @@ export default observer(class ContactSection extends React.Component {
 						<div className="row">
 							<div className="col-xs-12">
 								<h1>Have A Question?</h1>
-								<h3>Send us a message</h3>
+								<h2>Send us a message</h2>
 							</div>
 
 							<div className="col-xs-12">
@@ -38,7 +37,7 @@ export default observer(class ContactSection extends React.Component {
 									<textarea rows="4" placeholder="Message here..." onChange={(e) => handleChange('text', e)}/>
 								</div>
 								<div className="button-row">
-									{!emailSent && <button onClick={submitContact}>Send</button>}
+									{!emailSent && <button onClick={submitContact}>{emailSending ? "Sending" : "Send"}</button>}
 									{emailSent && <button className="active">Email Sent!</button>}
 								</div>
 

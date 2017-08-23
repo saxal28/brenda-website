@@ -18,12 +18,14 @@ export class ContactStore {
 			},
 
 			emailSent: false,
+			emailSending: false,
 
 			handleChange: action((field, e) => {
 				this.store[field] = e.target.value;
 			}),
 
 			onEmailSuccess: action(() => {
+				this.emailSending = false
 				this.emailSent = true
 			}),
 
@@ -35,6 +37,8 @@ export class ContactStore {
 					subject,
 					text: `Hey Brenda, You Have A New Message!${"\n\n"}${text}${"\n\n"}sent from - ${fullName} at ${email}`,
 				}
+
+				this.emailSending = true
 
 				SendContactEmail(contactEmail);
 			})

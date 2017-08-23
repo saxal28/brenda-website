@@ -69,11 +69,9 @@ export default observer(class BookNowSection extends React.Component {
 		const getStepTitle = this.getStepTitle.bind(this)
 
 		const {selectedDate, selectedTime, fullName, email, notes } = store
-		const {emailSent} = bookNowStore
+		const {emailSent, emailSending} = bookNowStore
 
 		const date = moment(selectedDate).format("MMM DD, YYYY")
-		
-		console.log('email sent', emailSent)
 
 		return (
 			<section className="contact">
@@ -154,7 +152,7 @@ export default observer(class BookNowSection extends React.Component {
 										<ValidationIcon completed={isCompleted(notes)}/>
 									</div>
 									<div className="button-row">
-										{!emailSent && <button onClick={submitBookNowRequest}>Submit</button>}
+										{!emailSent && <button onClick={submitBookNowRequest}>{emailSending ? "Sending..." : "Send Request"}</button>}
 										{emailSent && <button className="active" >Booking Received!</button>}
 									</div>
 								</div>}

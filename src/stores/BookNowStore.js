@@ -19,12 +19,14 @@ export class BookNowStore {
 			},
 
 			emailSent: false,
+			emailSending: false,
 
 			handleChange: action((field, e) => {
 				this.store[field] = e.target.value;
 			}),
 
 			onEmailSuccess: action(() => {
+				this.emailSent = false
 				this.emailSent = true
 			}),
 
@@ -44,6 +46,8 @@ export class BookNowStore {
 					"text": `Hey Brenda, You Have A New Booking!${"\n\n"}Quick Summary:${"\n"}${fullName} has booked a party for ${moment(selectedDate).format("MMM-DD")} at time.${"\n\n"}They even left some notes:${"\n"}${notes}${"\n\n"}Contact ${fullName} at this email ${email}!
 					`,
 				}
+
+				this.emailSending = true;
 
 				SendBookNowEmail(bookNowEmail);
 
