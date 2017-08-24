@@ -16,12 +16,15 @@ export class BookNowStore {
 				fullName: "",
 				email: "",
 				notes: "",
+				startTime: "",
+				endTime: "",
 			},
 
 			emailSent: false,
 			emailSending: false,
 
 			handleChange: action((field, e) => {
+				console.log(field,e.target.value)
 				this.store[field] = e.target.value;
 			}),
 
@@ -37,13 +40,13 @@ export class BookNowStore {
 
 			sendEmail: action(() => {
 
-				const {selectedDate, fullName, selectedCharacter, email, notes} = this.store;
+				const {selectedDate, fullName, selectedCharacter, email, notes, startTime, endTime} = this.store;
 
 				const bookNowEmail = {
 					"to": AccountEmail,
 					"from": "Alan Sax",
 					"subject": `You have a new booking for ${moment(selectedDate).format("MMM-DD")}!`,
-					"text": `Hey Brenda, You Have A New Booking!${"\n\n"}Quick Summary:${"\n"}${fullName} has booked a party for ${moment(selectedDate).format("MMM-DD")} at time.${"\n\n"}They even left some notes:${"\n"}${notes}${"\n\n"}Contact ${fullName} at this email ${email}!
+					"text": `Hey Brenda, You Have A New Booking!${"\n\n"}Quick Summary:${"\n"}${fullName} has booked a party for ${moment(selectedDate).format("MM/DD/YYYY")} from ${startTime} to ${endTime} ${"\n\n"}They even left some notes:${"\n"}${notes}${"\n\n"}Contact ${fullName} at this email ${email}!
 					`,
 				}
 

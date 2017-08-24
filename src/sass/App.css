@@ -237,7 +237,7 @@ button {
     border-radius: 50%;
     cursor: pointer; }
 
-input[type=text], textarea {
+input[type=text], input[type=time], textarea {
   background: transparent;
   padding: 10px 5px;
   padding-left: 15px;
@@ -256,6 +256,15 @@ input[type=text], textarea {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  .input-block.date input {
+    width: 300px; }
+    @media only screen and (max-width: 480px) {
+      .input-block.date input {
+        width: 200px; } }
+  .input-block.two-col input {
+    width: 40%; }
+  .input-block.two-col input[type=text]:first-of-type, .input-block.two-col input[type=time]:first-of-type {
+    border-right: 1px solid gray; }
   .input-block .fa {
     margin-right: 10px; }
     .input-block .fa.fa-check {
@@ -304,6 +313,7 @@ textarea, input, button {
     text-decoration: none;
     text-align: center;
     font-size: 28px;
+    font-family: "Amatic SC";
     transition: all 300ms; }
     .menu-overlay .overlay-link:hover {
       border-bottom-color: white; }

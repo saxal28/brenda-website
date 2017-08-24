@@ -1,6 +1,7 @@
 @import "../colors.scss";
+@import "../media.scss";
 
-input[type=text], textarea {
+input[type=text], input[type=time] , textarea {
 	background: transparent;
 	padding: 10px 5px;
 	padding-left: 15px;
@@ -24,11 +25,19 @@ input[type=text], textarea {
 	justify-content: space-between;
 	align-items: center;
 
-	//:inp{
-	//	width: 100%;
-	//	background:red;
-	//	cursor: pointer;
-	//}
+    &.date {
+      input {
+        width: 300px;
+        @include respond-to($phone) { width: 200px }
+      }
+    }
+
+	&.two-col {
+        input { width: 40%; }
+		input[type=text]:first-of-type, input[type=time]:first-of-type {
+          border-right:1px solid gray;
+        }
+	}
 	
 	.fa {
 		margin-right: 10px;
