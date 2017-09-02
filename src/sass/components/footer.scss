@@ -1,0 +1,41 @@
+@import "../media.scss";
+
+.footer {
+  height: 30vh;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  //@include respond-to($phone) {
+  //  padding: 30px;
+  //};
+
+  .footer-category {
+      margin: 0 0 5px 0;
+      text-transform: uppercase;
+  }
+
+  .footer-text {
+    margin: 0;
+  }
+
+  .social-media-row {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+
+
+    img { margin-left: 15px }
+
+  }
+
+  .col-8 {
+    text-align:right;
+    align-items: flex-end;
+
+    .footer-text { max-width: none }
+
+  }
+
+}

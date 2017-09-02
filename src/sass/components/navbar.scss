@@ -3,16 +3,22 @@
 
 .navbar {
 	
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
 	padding: 40px;
 	
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 	
 	z-index: 100;
+
+	&.relative {
+		background: #333;
+		position: relative;
+	}
+
 	
 	@include respond-to($phone) {
 		padding: 15px;
@@ -23,9 +29,9 @@
 		display: none;
 		font-size: 24px;
 		padding: 10px 20px;
-		
+
 		z-index: 205;
-		
+
 		@include respond-to($phone) {
 			display: initial;
 			color: white;
@@ -34,17 +40,17 @@
 	
 	.nav-link {
 		color: white;
-		padding: 4px;
+		padding: 4px 10px;
 		text-transform: uppercase;
 		border-bottom: 3px solid transparent;
 		cursor: pointer;
 		transition: all 400ms;
 		
-		&.brand-name {
-			position: absolute;
-			left: 20px;
-			border-bottom: none;
-		}
+		//&.brand-name {
+		//	position: absolute;
+		//	left: 20px;
+		//	border-bottom: none;
+		//}
 		
 		text-decoration: none !important;
 		
@@ -62,14 +68,14 @@
 			border-bottom-color: $primary;
 		}
 		
-		&.button {
-			margin-left:10px;
-			border: 2px solid white;
-			padding-left: 10px;
-			padding-right: 10px;
-			&:hover { background: white }
-			&.active { background: white; }
-		}
+		//&.button {
+		//	margin-left:10px;
+		//	border: 2px solid white;
+		//	padding-left: 10px;
+		//	padding-right: 10px;
+		//	&:hover { background: white }
+		//	&.active { background: white; }
+		//}
 		
 	}
 }

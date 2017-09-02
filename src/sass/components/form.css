@@ -25,7 +25,8 @@ input[type=text], input[type=time], textarea {
   .input-block.two-col input {
     width: 40%; }
   .input-block.two-col input[type=text]:first-of-type, .input-block.two-col input[type=time]:first-of-type {
-    border-right: 1px solid gray; }
+    border-right: 1px solid gray;
+    margin-right: 5px; }
   .input-block .fa {
     margin-right: 10px; }
     .input-block .fa.fa-check {

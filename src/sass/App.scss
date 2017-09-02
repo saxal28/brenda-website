@@ -1,4 +1,7 @@
-@import "components/sections.scss";
+@import "components/grid-container.scss";
+@import "components/hero.scss";
+@import "components/footer.scss";
+
 @import "components/button.scss";
 @import "components/navbar.scss";
 @import "components/category-box.scss";
@@ -7,6 +10,7 @@
 @import "components/form.scss";
 @import "components/image.scss";
 @import "components/menu-overlay.scss";
+@import "components/_card.scss";
 
 @import "views/contact.scss";
 @import "views/gallery.scss";
@@ -18,5 +22,5 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: sans-serif;
-	background: cadetblue;
+	background: #222;
 }

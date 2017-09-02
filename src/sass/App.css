@@ -1,113 +1,44 @@
-@keyframes animateBackground {
-  from {
-    background-position: 0 0; }
-  to {
-    background-position: 100% 0; } }
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  width: 100%; }
 
-@media only screen and (max-width: 480px) {
-  .container {
-    width: 100%; } }
-
-section {
+.hero {
+  background-size: cover !important;
+  background-position: bottom !important;
+  background-attachment: fixed !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   height: 100vh;
+  background-color: blueviolet !important;
+  background-blend-mode: overlay !important; }
+  .hero .button-row {
+    margin: 40px auto; }
+
+.footer {
+  height: 30vh;
+  background: #333;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-image: url("http://i.imgur.com/jhkoXzR.jpg");
-  background-color: slategray;
-  background-blend-mode: multiply;
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative; }
-  @media only screen and (max-width: 480px) {
-    section {
-      background-size: cover; } }
-  @media only screen and (max-width: 480px) {
-    section.home {
-      flex-direction: row; } }
-  section.home .overlay {
-    color: white;
-    right: inherit;
-    width: 50vw;
-    background: dodgerblue; }
-  section.about {
-    height: 50vh; }
-    @media only screen and (max-width: 480px) {
-      section.about {
-        height: 70vh; } }
-  section.categories {
-    height: auto; }
-  section.contact {
-    height: 100vh; }
-  section.footer {
-    height: 12vh;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: transparent; }
-  @media only screen and (max-width: 480px) {
-    section.hide-mobile {
-      display: none; } }
-
-.button-row {
-  margin: 20px auto;
-  display: flex;
-  justify-content: center; }
-
-.full-height {
-  height: 100%; }
-
-.full-width {
-  width: 100%;
-  margin: 0;
-  padding: 0; }
-
-.image-col {
-  background: url("https://firebasestorage.googleapis.com/v0/b/brenda-website.appspot.com/o/19197575_10209781557711358_825897358_o.jpg?alt=media&token=e206a910-0b30-4b69-9847-0c8ef9aa935f");
-  background-size: cover !important; }
-
-.center-vertical-horizontal {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column; }
-
-.primary-theme {
-  background: white; }
-  .primary-theme h1 {
-    color: deepskyblue; }
-  .primary-theme strong {
-    color: gold; }
-  .primary-theme p {
-    color: white; }
-  .primary-theme button {
-    color: deepskyblue;
-    border-color: deepskyblue; }
-    .primary-theme button.active {
-      background: deepskyblue;
-      color: white; }
-    .primary-theme button:hover {
-      background: deepskyblue;
-      color: white; }
-
-.primary-theme-inverted {
-  background: deepskyblue; }
-  .primary-theme-inverted h1 {
-    color: white; }
-  .primary-theme-inverted strong {
-    color: gold; }
-  .primary-theme-inverted p {
-    color: white; }
-  .primary-theme-inverted button {
-    color: white;
-    border-color: white; }
-    .primary-theme-inverted button.active {
-      background: white;
-      color: deepskyblue; }
-    .primary-theme-inverted button:hover {
-      background: white;
-      color: deepskyblue; }
+  align-items: center; }
+  .footer .footer-category {
+    margin: 0 0 5px 0;
+    text-transform: uppercase; }
+  .footer .footer-text {
+    margin: 0; }
+  .footer .social-media-row {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right; }
+    .footer .social-media-row img {
+      margin-left: 15px; }
+  .footer .col-8 {
+    text-align: right;
+    align-items: flex-end; }
+    .footer .col-8 .footer-text {
+      max-width: none; }
 
 button {
   padding: 15px 25px;
@@ -127,14 +58,17 @@ button {
     color: #333; }
 
 .navbar {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   padding: 40px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   z-index: 100; }
+  .navbar.relative {
+    background: #333;
+    position: relative; }
   @media only screen and (max-width: 480px) {
     .navbar {
       padding: 15px; } }
@@ -149,16 +83,12 @@ button {
         color: white; } }
   .navbar .nav-link {
     color: white;
-    padding: 4px;
+    padding: 4px 10px;
     text-transform: uppercase;
     border-bottom: 3px solid transparent;
     cursor: pointer;
     transition: all 400ms;
     text-decoration: none !important; }
-    .navbar .nav-link.brand-name {
-      position: absolute;
-      left: 20px;
-      border-bottom: none; }
     @media only screen and (max-width: 480px) {
       .navbar .nav-link {
         display: none; } }
@@ -168,15 +98,6 @@ button {
     .navbar .nav-link.active {
       color: deepskyblue;
       border-bottom-color: deepskyblue; }
-    .navbar .nav-link.button {
-      margin-left: 10px;
-      border: 2px solid white;
-      padding-left: 10px;
-      padding-right: 10px; }
-      .navbar .nav-link.button:hover {
-        background: white; }
-      .navbar .nav-link.button.active {
-        background: white; }
 
 .category-row {
   display: flex;
@@ -264,7 +185,8 @@ input[type=text], input[type=time], textarea {
   .input-block.two-col input {
     width: 40%; }
   .input-block.two-col input[type=text]:first-of-type, .input-block.two-col input[type=time]:first-of-type {
-    border-right: 1px solid gray; }
+    border-right: 1px solid gray;
+    margin-right: 5px; }
   .input-block .fa {
     margin-right: 10px; }
     .input-block .fa.fa-check {
@@ -319,6 +241,25 @@ textarea, input, button {
       border-bottom-color: white; }
   .menu-overlay .menu-container {
     height: 60vh; }
+
+.card {
+  height: 400px;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover !important;
+  background-position: bottom !important;
+  transition: all 400ms;
+  padding: 15px;
+  cursor: pointer !important; }
+  .card p {
+    margin: 10px auto;
+    text-align: center; }
+  .card:hover {
+    background-color: deepskyblue !important;
+    background-blend-mode: overlay !important; }
 
 section.contact .col-xs-12, section.gallery .col-xs-12 {
   text-align: center; }
@@ -426,4 +367,4 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: cadetblue; }
+  background: #222; }

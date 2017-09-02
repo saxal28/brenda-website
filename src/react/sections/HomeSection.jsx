@@ -1,4 +1,9 @@
 import React from "react";
+import {GridContainer} from "../components/GridContainer";
+import {Column} from "../components/Column";
+import {Hero} from "../components/Hero";
+import {Card} from "../components/Card";
+import {Footer} from "../components/Footer";
 
 
 
@@ -10,92 +15,72 @@ export class HomeSection extends React.Component {
 
 	render() {
 
-		const navigateTo = this.navigateTo.bind(this)
+		// const navigateTo = this.navigateTo.bind(this)
 
 		return (
 			<div>
 
-				<section className="home">
-					<div className="container">
+				<Hero image="http://i.imgur.com/jhkoXzR.jpg">
 
-						<h1>Book A <strong>Princess</strong> <br />For Your Next Party!</h1>
+					<h1>Book A Princess</h1>
+					<h1>For Your Next Party</h1>
 
+					<div className="button-row">
+						<button>Gallery</button>
+						<button>Book Now</button>
+					</div>
+
+				</Hero>
+
+				<GridContainer>
+
+					<Column>
+						<Card
+							title="Who We Are"
+							subtitle="Happily Ever After STL specializes in providing princesses and disney characters to parties and events"
+						/>
+					</Column>
+
+					<Column>
+						<Card
+							title="Gallery"
+							image="http://i.imgur.com/jhkoXzR.jpg"/>
+					</Column>
+
+				</GridContainer>
+
+				<GridContainer>
+
+					<Column>
+						<Card
+							title="Characters"
+							image="http://i.imgur.com/CX5QmN2.jpg"/>
+					</Column>
+
+					<Column>
+						<Card title="Cast"
+							  image="http://i.imgur.com/CX5QmN2.jpg"/>
+					</Column>
+
+				</GridContainer>
+
+				<Hero
+					image="http://i.imgur.com/jhkoXzR.jpg"
+					height="60vh"
+				>
+
+					<GridContainer>
+
+						<h1>Hire A Princess without breaking the bank!</h1>
 						<div className="button-row">
-							<button onClick={() => navigateTo('gallery')}>Gallery</button>
-							<button className="active" onClick={() => navigateTo('book-now')}>Book Now</button>
+							<button>Party Packages</button>
+							<button>Questions? Click Here</button>
 						</div>
+					</GridContainer>
 
-					</div>
-				</section>
+				</Hero>
 
-				<section className="about hide-mobile">
-
-					<div className="container full-height full-width">
-
-						<div className="col-sm-6 full-height center-vertical-horizontal primary-theme-inverted">
-							<h1>Who We Are</h1>
-							<p>Happily Ever After STL specializes in providing princesses
-								and disney characters to parties and events.
-							</p>
-							<div className="button-row">
-								<button onClick={() => navigateTo('book-now')}>Book Now</button>
-								<button onClick={() => navigateTo('contact')}>Contact Us</button>
-							</div>
-						</div>
-
-						<div className="col-sm-6 full-height no-padding image-col" />
-
-					</div>
-
-				</section>
-
-					<section className="categories">
-						<div className="container full-width full-height">
-
-							<div className="col-sm-4 full-height category-box gallery" onClick={() => navigateTo('gallery')}>
-								<h1>Gallery</h1>
-								<div className="overlay" />
-							</div>
-
-							<div className="col-sm-4 full-height category-box cast" onClick={() => navigateTo('cast')}>
-								<h1>Cast</h1>
-								<div className="overlay" />
-							</div>
-
-							<div className="col-sm-4 full-height category-box characters" onClick={() => navigateTo('characters')}>
-								<h1>Characters</h1>
-								<div className="overlay" />
-							</div>
-
-						</div>
-					</section>
-
-					<section className="contact">
-
-						<div className="container">
-
-							<h1>Have Questions</h1>
-							<h2>Send Them To Us</h2>
-
-							<div className="button-row">
-								<button onClick={() => navigateTo('contact')}>Contact Us</button>
-								{/*<button className="active">Book Now</button>*/}
-							</div>
-
-						</div>
-
-
-					</section>
-
-					<section className="footer">
-
-						<div className="social-media-row">
-							<i className="fa fa-facebook" />
-							<i className="fa fa-instagram" />
-							<i className="fa fa-twitter" />
-						</div>
-
-					</section>
+				<Footer />
 
 			</div>
 		)

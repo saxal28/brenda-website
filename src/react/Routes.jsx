@@ -5,6 +5,7 @@ import GallerySection from "./sections/GallerySection";
 import {CharacterSection} from "./sections/CharacterSection";
 import BookNowSection from "./sections/BookNowSection";
 import ContactSection from "./sections/ContactSection";
+import GalleryListSection from "./sections/GalleryListSection";
 
 export class Routes extends React.Component {
 
@@ -12,7 +13,7 @@ export class Routes extends React.Component {
 		return (
 			<div>
 				<Route exact path="/" component={HomeSection} />
-				<Route path="/gallery" component={GallerySection} />
+				<Route path="/gallery" component={GalleryListSection} />
 				<Route path="/characters" component={CharacterSection} />
 				<Route path="/contact" component={ContactSection} />
 				<Route path="/book-now" component={BookNowSection} />

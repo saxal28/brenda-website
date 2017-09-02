@@ -1,0 +1,22 @@
+.footer {
+  height: 30vh;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .footer .footer-category {
+    margin: 0 0 5px 0;
+    text-transform: uppercase; }
+  .footer .footer-text {
+    margin: 0; }
+  .footer .social-media-row {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right; }
+    .footer .social-media-row img {
+      margin-left: 15px; }
+  .footer .col-8 {
+    text-align: right;
+    align-items: flex-end; }
+    .footer .col-8 .footer-text {
+      max-width: none; }

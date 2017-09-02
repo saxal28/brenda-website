@@ -56,7 +56,7 @@ export default observer(class GallerySection extends React.Component {
 
 	render() {
 
-		console.log(firebase.storage().ref())
+		console.log(firebase.storage().ref().child("19125910_10209781557031341_1693975192_o.jpg"))
 
 		const {currentImage} = this.state;
 
@@ -83,7 +83,7 @@ export default observer(class GallerySection extends React.Component {
 							{/*accept="image/*"*/}
 							{/*name="avatar"*/}
 							{/*randomizeFilename*/}
-							{/*storageRef={firebase.storage().ref()}*/}
+							{/*storageRef={firebase.storage().ref("images")}*/}
 							{/*onUploadStart={this.handleUploadStart}*/}
 							{/*onUploadError={this.handleUploadError}*/}
 							{/*onUploadSuccess={this.handleUploadSuccess}*/}
