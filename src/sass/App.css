@@ -40,6 +40,16 @@
     .footer .col-8 .footer-text {
       max-width: none; }
 
+.header {
+  background-size: cover !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 30vh; }
+  .header .button-row {
+    margin: 40px auto; }
+
 button {
   padding: 15px 25px;
   color: white;
@@ -251,6 +261,8 @@ textarea, input, button {
   flex-direction: column;
   background-size: cover !important;
   background-position: bottom !important;
+  background-blend-mode: overlay !important;
+  background-color: #333 !important;
   transition: all 400ms;
   padding: 15px;
   cursor: pointer !important; }
@@ -258,8 +270,7 @@ textarea, input, button {
     margin: 10px auto;
     text-align: center; }
   .card:hover {
-    background-color: deepskyblue !important;
-    background-blend-mode: overlay !important; }
+    background-color: deepskyblue !important; }
 
 section.contact .col-xs-12, section.gallery .col-xs-12 {
   text-align: center; }

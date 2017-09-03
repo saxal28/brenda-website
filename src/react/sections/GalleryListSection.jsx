@@ -4,6 +4,12 @@ import _ from "lodash";
 import { observer } from "mobx-react";
 import {ImageStore} from "../../stores/ImageStore";
 import FileUploader from 'react-firebase-file-uploader';
+import {Card} from "../components/Card";
+import {GridContainer} from "../components/GridContainer";
+import {Column} from "../components/Column";
+import {Hero} from "../components/Hero";
+import {Footer} from "../components/Footer";
+import {Header} from "../components/Header";
 
 // import {UploadButton} from "./common/UploadButton";
 
@@ -33,24 +39,31 @@ export default observer(class GalleryListSection extends React.Component {
 
         return (
 
-            <section className="gallery-list">
+            <div>
 
-                <div className="container">
+              <Header  title="Gallery" />
 
-                    <div className="row">
-                        {values.map(x => {
-                            return (
-                                <div className="card" style={{background: `url(${x.url})`}}>
-                                    <h1>hi</h1>
-                                </div>
-                            )
-                        })}
-                    </div>
+              <GridContainer>
 
+                  {values.map(x => {
+                      return (
 
-                </div>
+                         <Column columnSize="6">
 
-            </section>
+                            <Card  title="title" subtitle="this is a subtitle"  image={x.url}/>
+                             {/* */}
+
+                         </Column>
+
+                      )
+                  })}
+
+              </GridContainer>
+
+                <Footer />
+
+            </div>
+
         )
     }
 })

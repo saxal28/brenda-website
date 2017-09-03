@@ -12,8 +12,11 @@
 
     background-size: cover !important;
     background-position: bottom !important;
+    background-blend-mode: overlay !important;
 
-    transition: all 400ms ;
+  background-color: #333 !important;
+
+  transition: all 400ms ;
 
     padding: 15px;
 
@@ -23,7 +26,6 @@
 
     &:hover {
         background-color: deepskyblue !important;
-        background-blend-mode: overlay !important;
     }
 
 }
