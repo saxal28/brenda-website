@@ -3,6 +3,13 @@
   margin: 0 auto;
   width: 100%; }
 
+.content-container {
+  margin: 30px auto; }
+
+.button-row {
+  text-align: center;
+  margin: 30px auto; }
+
 .hero {
   background-size: cover !important;
   background-position: bottom !important;
@@ -12,17 +19,17 @@
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  background-color: blueviolet !important;
+  background-color: darkmagenta !important;
   background-blend-mode: overlay !important; }
   .hero .button-row {
     margin: 40px auto; }
 
 .footer {
-  height: 30vh;
   background: #333;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  padding: 40px 30px; }
   .footer .footer-category {
     margin: 0 0 5px 0;
     text-transform: uppercase; }
@@ -347,7 +354,8 @@ h2 {
       line-height: 45px; } }
 
 h3 {
-  font-family: "Amatic SC"; }
+  font-family: "Amatic SC";
+  text-align: center; }
 
 p {
   font-size: 16px;

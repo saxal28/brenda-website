@@ -1,11 +1,17 @@
 import React from "react";
 import {ContactStore} from "../../stores/ContactStore";
 import {observer} from "mobx-react";
+import {GridContainer} from "../components/GridContainer";
+import {Column} from "../components/Column";
+import {Header} from "../components/Header";
+import {ContentContainer} from "../components/ContentContainer";
+import {ValidationIcon} from "../components/ValidationIcon";
 
 export const contactStore = new ContactStore();
 const {handleChange, store, sendEmail} = contactStore;
 
 const submitContact = () => sendEmail()
+const isCompleted = value => value && value.length !== 0 && value !== "";
 
 export default observer(class ContactSection extends React.Component {
 
@@ -14,39 +20,37 @@ export default observer(class ContactSection extends React.Component {
 		const {emailSent, emailSending} = contactStore
 
 		return (
-				<section className="contact">
 
-					<div className="container">
-						<div className="row">
-							<div className="col-xs-12">
-								<h1>Have A Question?</h1>
-								<h2>Send us a message</h2>
-							</div>
+			<div>
 
-							<div className="col-xs-12">
-								<div className="input-block">
-									<input type="text" placeholder="Full Name" onChange={(e) => handleChange('fullName', e)}/>
-								</div>
-								<div className="input-block">
-									<input type="text" placeholder="Email" onChange={(e) => handleChange('email', e)}/>
-								</div>
-								<div className="input-block">
-									<input type="text" placeholder="Subject" onChange={(e) => handleChange('subject', e)}/>
-								</div>
-								<div className="input-block">
-									<textarea rows="4" placeholder="Message here..." onChange={(e) => handleChange('text', e)}/>
-								</div>
-								<div className="button-row">
-									{!emailSent && <button onClick={submitContact}>{emailSending ? "Sending" : "Send"}</button>}
-									{emailSent && <button className="active">Email Sent!</button>}
-								</div>
+				<Header height="10vh"/>
 
-							</div>
-						</div>
+                <ContentContainer >
 
+                    <h1>Questions?</h1>
+                    <h3>Send them to us!</h3>
+
+					<div className="input-block">
+						<input type="text" placeholder="Full Name" onChange={(e) => handleChange('fullName', e)}/>
+                        <ValidationIcon completed={isCompleted('fullName')}/>
+                    </div>
+					<div className="input-block">
+						<input type="text" placeholder="Email" onChange={(e) => handleChange('email', e)}/>
+					</div>
+					<div className="input-block">
+						<input type="text" placeholder="Subject" onChange={(e) => handleChange('subject', e)}/>
+					</div>
+					<div className="input-block">
+						<textarea rows="4" placeholder="Message here..." onChange={(e) => handleChange('text', e)}/>
+					</div>
+					<div className="button-row">
+						{!emailSent && <button onClick={submitContact}>{emailSending ? "Sending" : "Send"}</button>}
+						{emailSent && <button className="active">Email Sent!</button>}
 					</div>
 
-				</section>
+                </ContentContainer>
+
+			</div>
 
 		)
 	}

@@ -4,6 +4,7 @@ import {Column} from "../components/Column";
 import {Hero} from "../components/Hero";
 import {Card} from "../components/Card";
 import {Footer} from "../components/Footer";
+import {ContentContainer} from "../components/ContentContainer";
 
 
 
@@ -32,37 +33,40 @@ export class HomeSection extends React.Component {
 
 				</Hero>
 
-				<GridContainer>
+				<ContentContainer>
 
-					<Column>
-						<Card
-							title="Who We Are"
-							subtitle="Happily Ever After STL specializes in providing princesses and disney characters to parties and events"
-						/>
-					</Column>
+					<GridContainer>
 
-					<Column>
-						<Card
-							title="Gallery"
-							image="http://i.imgur.com/jhkoXzR.jpg"/>
-					</Column>
+						<Column>
+							<Card
+								title="Who We Are"
+								subtitle="Happily Ever After STL specializes in providing princesses and disney characters to parties and events"
+							/>
+						</Column>
 
-				</GridContainer>
+						<Column>
+							<Card
+								title="Gallery"
+								image="http://i.imgur.com/jhkoXzR.jpg"/>
+						</Column>
 
-				<GridContainer>
+					</GridContainer>
 
-					<Column>
-						<Card
-							title="Characters"
-							image="http://i.imgur.com/CX5QmN2.jpg"/>
-					</Column>
+					<GridContainer>
 
-					<Column>
-						<Card title="Cast"
-							  image="http://i.imgur.com/CX5QmN2.jpg"/>
-					</Column>
+						<Column>
+							<Card
+								title="Characters"
+								image="http://i.imgur.com/CX5QmN2.jpg"/>
+						</Column>
 
-				</GridContainer>
+						<Column>
+							<Card title="Cast"
+								  image="http://i.imgur.com/CX5QmN2.jpg"/>
+						</Column>
+
+					</GridContainer>
+				</ContentContainer>
 
 				<Hero
 					image="http://i.imgur.com/jhkoXzR.jpg"
@@ -74,7 +78,7 @@ export class HomeSection extends React.Component {
 						<h1>Hire A Princess without breaking the bank!</h1>
 						<div className="button-row">
 							<button>Party Packages</button>
-							<button>Questions? Click Here</button>
+							<button>Questions?</button>
 						</div>
 					</GridContainer>
 

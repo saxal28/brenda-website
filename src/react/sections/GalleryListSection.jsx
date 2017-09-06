@@ -35,15 +35,14 @@ export default observer(class GalleryListSection extends React.Component {
             x.uid = uids[index];
         })
 
-        console.log(values)
 
         return (
 
             <div>
 
-              <Header  title="Gallery" />
+              <Hero title="Gallery" height="30vh" image="http://i.imgur.com/jhkoXzR.jpg" />
 
-              <GridContainer>
+              <GridContainer spacing>
 
                   {values.map(x => {
                       return (
@@ -51,7 +50,6 @@ export default observer(class GalleryListSection extends React.Component {
                          <Column columnSize="6">
 
                             <Card  title="title" subtitle="this is a subtitle"  image={x.url}/>
-                             {/* */}
 
                          </Column>
 

@@ -1,9 +1,9 @@
 .footer {
-  height: 30vh;
   background: #333;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  padding: 40px 30px; }
   .footer .footer-category {
     margin: 0 0 5px 0;
     text-transform: uppercase; }

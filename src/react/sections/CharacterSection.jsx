@@ -29,7 +29,7 @@ export class CharacterSection extends React.Component {
 
 				<Header  title="Characters" />
 
-				<GridContainer>
+				<GridContainer spacing>
 
                     {values.map(x => {
                         return (
