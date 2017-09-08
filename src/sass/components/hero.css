@@ -7,7 +7,7 @@
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  background-color: darkmagenta !important;
-  background-blend-mode: overlay !important; }
+  background-color: crimson  !important;
+  background-blend-mode: darken !important; }
   .hero .button-row {
     margin: 40px auto; }

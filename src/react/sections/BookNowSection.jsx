@@ -163,7 +163,7 @@ export default observer(class BookNowSection extends React.Component {
                             </div>
 
                             <div className="input-block">
-s                                <input type="text" placeholder="notes" value={notes}/>
+                               <input type="text" placeholder="notes" value={notes}/>
                                 <ValidationIcon completed={isCompleted(notes)}/>
                             </div>
 

@@ -3,7 +3,7 @@ import React from "react";
 export const Header = ({image, height, title, subtitle, children, color}) => {
 
     const style = {
-        background: image ? `url(${image})` : (color ? color : "#333"),
+        background: image ? `url(${image})` : (color ? color : "#222"),
         height: height ? height : "30vh",
         // backgroundColor: backgroundOverlay
     };

@@ -3,22 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="d0e33179-2fc4-40d7-97d2-af68bc7a02ff" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/react/components/GridContainer.jsx" afterPath="$PROJECT_DIR$/src/react/components/GridContainer.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/react/components/Navbar.jsx" afterPath="$PROJECT_DIR$/src/react/components/Navbar.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/react/Routes.jsx" afterPath="$PROJECT_DIR$/src/react/Routes.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/react/components/Header.jsx" afterPath="$PROJECT_DIR$/src/react/components/Header.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/react/sections/BookNowSection.jsx" afterPath="$PROJECT_DIR$/src/react/sections/BookNowSection.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/react/sections/CharacterSection.jsx" afterPath="$PROJECT_DIR$/src/react/sections/CharacterSection.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/react/sections/ContactSection.jsx" afterPath="$PROJECT_DIR$/src/react/sections/ContactSection.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/react/sections/GalleryListSection.jsx" afterPath="$PROJECT_DIR$/src/react/sections/GalleryListSection.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/react/sections/HomeSection.jsx" afterPath="$PROJECT_DIR$/src/react/sections/HomeSection.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/App.css" afterPath="$PROJECT_DIR$/src/sass/App.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/App.scss" afterPath="$PROJECT_DIR$/src/sass/App.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/components/_card.scss" afterPath="$PROJECT_DIR$/src/sass/components/_card.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/components/footer.css" afterPath="$PROJECT_DIR$/src/sass/components/footer.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/components/footer.scss" afterPath="$PROJECT_DIR$/src/sass/components/footer.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/components/grid-container.css" afterPath="$PROJECT_DIR$/src/sass/components/grid-container.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/components/grid-container.scss" afterPath="$PROJECT_DIR$/src/sass/components/grid-container.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/components/header.css" afterPath="$PROJECT_DIR$/src/sass/components/header.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/components/header.scss" afterPath="$PROJECT_DIR$/src/sass/components/header.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/components/hero.css" afterPath="$PROJECT_DIR$/src/sass/components/hero.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/components/hero.scss" afterPath="$PROJECT_DIR$/src/sass/components/hero.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/fonts.css" afterPath="$PROJECT_DIR$/src/sass/fonts.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/fonts.scss" afterPath="$PROJECT_DIR$/src/sass/fonts.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -39,56 +36,58 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GalleryListSection.jsx" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/react/sections/GalleryListSection.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="42" column="88" lean-forward="false" selection-start-line="42" selection-start-column="88" selection-end-line="42" selection-end-column="88" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Footer.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/react/components/Footer.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="35" column="30" lean-forward="true" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomeSection.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/react/sections/HomeSection.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="71" column="58" lean-forward="true" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="58" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sass/components/footer.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ContactSection.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/react/sections/ContactSection.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="160">
+              <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_card.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sass/components/_card.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="131">
+              <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeSection.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/react/sections/HomeSection.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="386">
+              <caret line="63" column="48" lean-forward="false" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="48" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PricingSection.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/react/sections/PricingSection.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Routes.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/react/Routes.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="16" column="57" lean-forward="false" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -96,11 +95,31 @@
       <file leaf-file-name="BookNowSection.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/react/sections/BookNowSection.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="141" column="29" lean-forward="true" selection-start-line="141" selection-start-column="29" selection-end-line="141" selection-end-column="29" />
+            <state relative-caret-position="100">
+              <caret line="160" column="31" lean-forward="false" selection-start-line="160" selection-start-column="31" selection-end-line="160" selection-end-column="31" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GalleryListSection.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/react/sections/GalleryListSection.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="48" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="66" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Header.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/react/components/Header.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="5" column="65" lean-forward="false" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -109,7 +128,7 @@
         <entry file="file://$PROJECT_DIR$/src/react/components/Hero.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+              <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -118,18 +137,8 @@
       <file leaf-file-name="hero.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sass/components/hero.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="4" column="42" lean-forward="false" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Navbar.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/react/components/Navbar.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+            <state relative-caret-position="300">
+              <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -139,9 +148,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>nav</find>
-      <find>nav-link</find>
-      <find>ov</find>
       <find>over</find>
       <find>overla</find>
       <find>overlay</find>
@@ -169,6 +175,9 @@
       <find>.ca</find>
       <find>.car</find>
       <find>.card</find>
+      <find>bo</find>
+      <find>body</find>
+      <find>body</find>
     </findStrings>
     <replaceStrings>
       <replace>$primary</replace>
@@ -186,7 +195,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app-config.js" />
         <option value="$PROJECT_DIR$/src/react/App.js" />
         <option value="$PROJECT_DIR$/src/react/components/Slideshow.js" />
         <option value="$PROJECT_DIR$/src/react/components/Slideshow.jsx" />
@@ -210,7 +218,6 @@
         <option value="$PROJECT_DIR$/src/react/forms/BookNowForm.jsx" />
         <option value="$PROJECT_DIR$/src/app-config.js" />
         <option value="$PROJECT_DIR$/src/react/sections/GallerySection.jsx" />
-        <option value="$PROJECT_DIR$/src/react/Routes.jsx" />
         <option value="$PROJECT_DIR$/src/sass/media.scss" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/sass/components/sections.scss" />
@@ -221,22 +228,24 @@
         <option value="$PROJECT_DIR$/src/react/components/Footer.jsx" />
         <option value="$PROJECT_DIR$/src/react/components/Column.jsx" />
         <option value="$PROJECT_DIR$/src/react/components/Hero.jsx" />
-        <option value="$PROJECT_DIR$/src/sass/components/_card.scss" />
-        <option value="$PROJECT_DIR$/src/sass/App.scss" />
-        <option value="$PROJECT_DIR$/src/sass/components/header.scss" />
-        <option value="$PROJECT_DIR$/src/react/components/Header.jsx" />
         <option value="$PROJECT_DIR$/src/react/components/ContentContainer.jsx" />
         <option value="$PROJECT_DIR$/src/sass/components/grid-container.scss" />
         <option value="$PROJECT_DIR$/src/sass/fonts.scss" />
         <option value="$PROJECT_DIR$/src/react/sections/CharacterSection.jsx" />
         <option value="$PROJECT_DIR$/src/react/components/Navbar.jsx" />
-        <option value="$PROJECT_DIR$/src/react/sections/ContactSection.jsx" />
-        <option value="$PROJECT_DIR$/src/react/sections/BookNowSection.jsx" />
-        <option value="$PROJECT_DIR$/src/sass/components/hero.scss" />
-        <option value="$PROJECT_DIR$/src/react/sections/HomeSection.jsx" />
-        <option value="$PROJECT_DIR$/src/sass/components/footer.scss" />
         <option value="$PROJECT_DIR$/src/react/components/GridContainer.jsx" />
         <option value="$PROJECT_DIR$/src/react/sections/GalleryListSection.jsx" />
+        <option value="$PROJECT_DIR$/src/react/sections/BookNowSection.jsx" />
+        <option value="$PROJECT_DIR$/src/sass/App.scss" />
+        <option value="$PROJECT_DIR$/src/sass/components/footer.scss" />
+        <option value="$PROJECT_DIR$/src/sass/components/header.scss" />
+        <option value="$PROJECT_DIR$/src/react/components/Header.jsx" />
+        <option value="$PROJECT_DIR$/src/sass/components/hero.scss" />
+        <option value="$PROJECT_DIR$/src/react/sections/ContactSection.jsx" />
+        <option value="$PROJECT_DIR$/src/sass/components/_card.scss" />
+        <option value="$PROJECT_DIR$/src/react/Routes.jsx" />
+        <option value="$PROJECT_DIR$/src/react/sections/PricingSection.jsx" />
+        <option value="$PROJECT_DIR$/src/react/sections/HomeSection.jsx" />
       </list>
     </option>
   </component>
@@ -368,28 +377,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sass" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="brenda-website" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="brenda-website" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="react" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -416,28 +403,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="brenda-website" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="brenda-website" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="react" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -456,7 +421,7 @@
     <property name="node.js.selected.package.stylelint" value="" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="Footer&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/sass/components/footer.scss&#10;hero&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/components/Hero.jsx&#10;navbar&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/components/Navbar.jsx&#10;Boo&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/sections/BookNowSection.jsx&#10;Char&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/sections/CharacterSection.jsx&#10;Home&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/sections/HomeSection.jsx&#10;GalleryLis&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/sections/GalleryListSection.jsx&#10;container&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/sass/components/grid-container.scss&#10;Chara&#9;null&#9;null&#10;header&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/sass/components/header.scss&#10;Card&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/components/Card.jsx&#10;col&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/components/Column.jsx&#10;footer.&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/sass/components/footer.scss&#10;na&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/components/Navbar.jsx&#10;.card&#9;null&#9;null&#10;html&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/public/index.html&#10;home&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/sections/HomeSection.jsx&#10;Book&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/sections/BookNowSection.jsx&#10;Ga&#9;null&#9;null&#10;sectio&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/sass/components/sections.scss&#10;Routes&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/Routes.jsx&#10;Gallery&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/sections/GallerySection.jsx&#10;EmailA&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/lib/API/EmailApi.js&#10;BookNowS&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/stores/BookNowStore.js&#10;BookNow&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/sections/BookNowSection.jsx&#10;Book Now&#9;null&#9;null&#10;Conta&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/sections/ContactSection.jsx&#10;sec&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/sass/components/sections.scss&#10;form&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/sass/components/form.scss&#10;navba&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/sass/components/navbar.scss&#10;font&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/sass/fonts.scss&#10;Api&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/lib/API/EmailApi.js&#10;fonts&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/sass/fonts.scss&#10;section&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/sass/components/sections.scss&#10;fon&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/sass/fonts.scss&#10;Rou&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/Routes.jsx&#10;Cont&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/sections/ContactSection.jsx&#10;Con&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/stores/ContactStore.js&#10;Contac&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/stores/ContactStore.js&#10;sect&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/sass/components/sections.scss&#10;Contact&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/sections/ContactSection.jsx&#10;BookN&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/sections/BookNowSection.jsx&#10;Gall&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/sections/GallerySection.jsx&#10;Rout&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/Routes.jsx&#10;over&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/sass/components/menu-overlay.scss&#10;boo&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/sections/BookNowSection.jsx&#10;routes&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/Routes.jsx&#10;App&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/App.js&#10;conta&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/sections/ContactSection.jsx&#10;button&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/sass/components/button.scss" />
+    <property name="SearchEverywhereHistoryKey" value="Routes&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/Routes.jsx&#10;.card&#9;null&#9;null&#10;hero&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/sass/components/hero.scss&#10;Header&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/components/Header.jsx&#10;header&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/sass/components/header.scss&#10;Footer&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/sass/components/footer.scss&#10;navbar&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/components/Navbar.jsx&#10;Boo&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/sections/BookNowSection.jsx&#10;Char&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/sections/CharacterSection.jsx&#10;Home&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/sections/HomeSection.jsx&#10;GalleryLis&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/sections/GalleryListSection.jsx&#10;container&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/sass/components/grid-container.scss&#10;Chara&#9;null&#9;null&#10;Card&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/components/Card.jsx&#10;col&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/components/Column.jsx&#10;footer.&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/sass/components/footer.scss&#10;na&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/components/Navbar.jsx&#10;html&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/public/index.html&#10;home&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/sections/HomeSection.jsx&#10;Book&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/sections/BookNowSection.jsx&#10;Ga&#9;null&#9;null&#10;sectio&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/sass/components/sections.scss&#10;Gallery&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/sections/GallerySection.jsx&#10;EmailA&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/lib/API/EmailApi.js&#10;BookNowS&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/stores/BookNowStore.js&#10;BookNow&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/sections/BookNowSection.jsx&#10;Book Now&#9;null&#9;null&#10;Conta&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/sections/ContactSection.jsx&#10;sec&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/sass/components/sections.scss&#10;form&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/sass/components/form.scss&#10;navba&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/sass/components/navbar.scss&#10;font&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/sass/fonts.scss&#10;Api&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/lib/API/EmailApi.js&#10;fonts&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/sass/fonts.scss&#10;section&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/sass/components/sections.scss&#10;fon&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/sass/fonts.scss&#10;Rou&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/Routes.jsx&#10;Cont&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/sections/ContactSection.jsx&#10;Con&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/stores/ContactStore.js&#10;Contac&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/stores/ContactStore.js&#10;sect&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/sass/components/sections.scss&#10;Contact&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/sections/ContactSection.jsx&#10;BookN&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/sections/BookNowSection.jsx&#10;Gall&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/sections/GallerySection.jsx&#10;Rout&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/Routes.jsx&#10;over&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/sass/components/menu-overlay.scss&#10;boo&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/sections/BookNowSection.jsx&#10;routes&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/Routes.jsx&#10;App&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/App.js&#10;conta&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/sections/ContactSection.jsx" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -571,18 +536,18 @@
       <workItem from="1503013632358" duration="2362000" />
       <workItem from="1503445796054" duration="3501000" />
       <workItem from="1503459829615" duration="3255000" />
-      <workItem from="1503544220663" duration="42294000" />
+      <workItem from="1503544220663" duration="47372000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132926000" />
+    <option name="totallyTimeSpent" value="138004000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1280" height="1024" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24741448" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24741448" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32853982" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -633,20 +598,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/sass/views/contact.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/react/components/Slideshow.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/components/menu-overlay.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="436">
@@ -779,7 +730,7 @@
         <state relative-caret-position="336">
           <caret line="32" column="45" lean-forward="false" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -802,26 +753,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/react/Routes.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="44" lean-forward="false" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/media.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/react/sections/GallerySection.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -855,7 +790,7 @@
         <state relative-caret-position="160">
           <caret line="8" column="29" lean-forward="false" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -886,34 +821,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/components/_card.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/components/header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/react/components/Card.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/react/components/Header.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="41" lean-forward="false" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -934,14 +845,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/App.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/react/components/ContentContainer.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -955,7 +858,7 @@
         <state relative-caret-position="123">
           <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -964,22 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/react/components/Hero.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/components/hero.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="42" lean-forward="false" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
           <folding />
         </state>
       </provider>
@@ -997,7 +884,127 @@
     <entry file="file://$PROJECT_DIR$/src/react/components/Footer.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="35" column="30" lean-forward="true" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+          <caret line="35" column="30" lean-forward="false" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/react/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/App.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/components/footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/components/header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/react/components/Hero.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/components/hero.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/react/sections/ContactSection.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/components/_card.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/react/components/Header.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="65" lean-forward="false" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/react/sections/GalleryListSection.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="48" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="66" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/react/Routes.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" column="57" lean-forward="false" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/react/sections/PricingSection.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/react/sections/GallerySection.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2">
+          <caret line="67" column="16" lean-forward="false" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/react/sections/BookNowSection.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="160" column="31" lean-forward="false" selection-start-line="160" selection-start-column="31" selection-end-line="160" selection-end-column="31" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -1006,45 +1013,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/react/sections/HomeSection.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="71" column="58" lean-forward="true" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="58" />
+        <state relative-caret-position="386">
+          <caret line="63" column="48" lean-forward="false" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="48" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/components/footer.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/react/sections/BookNowSection.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="141" column="29" lean-forward="true" selection-start-line="141" selection-start-column="29" selection-end-line="141" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/react/sections/ContactSection.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/react/sections/GalleryListSection.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="42" column="88" lean-forward="false" selection-start-line="42" selection-start-column="88" selection-end-line="42" selection-end-column="88" />
-          <folding />
         </state>
       </provider>
     </entry>

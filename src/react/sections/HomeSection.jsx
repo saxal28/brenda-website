@@ -61,7 +61,7 @@ export class HomeSection extends React.Component {
 						</Column>
 
 						<Column>
-							<Card title="Cast"
+							<Card title="Pricing"
 								  image="http://i.imgur.com/CX5QmN2.jpg"/>
 						</Column>
 
