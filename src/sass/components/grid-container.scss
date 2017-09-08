@@ -1,3 +1,5 @@
+@import "../media.scss";
+
 .container {
 
   max-width: 960px;
@@ -8,6 +10,10 @@
 
 .content-container {
   margin: 30px auto;
+	
+	@include respond-to($phone) {
+		margin: 0 auto !important;
+	}
 }
 
 .button-row {

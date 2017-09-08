@@ -1,10 +1,11 @@
 import React from 'react';
 
-export const Card = ({image, title, subtitle, children, color, onClick}) => {
+export const Card = ({image, title, subtitle, children, color, onClick, noOverlay}) => {
 
     const style = {
-        background: image ? `url(${image})` : (color ? color : "#333"),
+        background: image ? `url(${image})` : "",
         cursor: onClick ? "pointer" : "inherit",
+        backgroundColor: noOverlay ? "transparent"  : "#333"
     };
 
     return (

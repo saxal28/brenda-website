@@ -40,7 +40,7 @@ export default observer(class GalleryListSection extends React.Component {
 
             <div>
 
-              <Hero title="Gallery" height="30vh" image="http://i.imgur.com/jhkoXzR.jpg" />
+              <Header title="Gallery" height="30vh" />
 
               <GridContainer spacing>
 
@@ -49,7 +49,7 @@ export default observer(class GalleryListSection extends React.Component {
 
                          <Column columnSize="6">
 
-                            <Card  title="title" subtitle="this is a subtitle"  image={x.url}/>
+                            <Card noOverlay image={x.url}/>
 
                          </Column>
 

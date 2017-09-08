@@ -18,12 +18,13 @@ export default observer(class ContactSection extends React.Component {
 	render() {
 
 		const {emailSent, emailSending} = contactStore
+		const {fullName, email, subject, text} = contactStore.store
 
 		return (
 
 			<div>
 
-				<Header height="10vh"/>
+				<Header height="10vh" color="transparent"/>
 
                 <ContentContainer >
 
@@ -32,16 +33,19 @@ export default observer(class ContactSection extends React.Component {
 
 					<div className="input-block">
 						<input type="text" placeholder="Full Name" onChange={(e) => handleChange('fullName', e)}/>
-                        <ValidationIcon completed={isCompleted('fullName')}/>
+                        <ValidationIcon completed={isCompleted(fullName)}/>
                     </div>
 					<div className="input-block">
 						<input type="text" placeholder="Email" onChange={(e) => handleChange('email', e)}/>
+						<ValidationIcon completed={isCompleted(email)}/>
 					</div>
 					<div className="input-block">
 						<input type="text" placeholder="Subject" onChange={(e) => handleChange('subject', e)}/>
+						<ValidationIcon completed={isCompleted(subject)}/>
 					</div>
 					<div className="input-block">
 						<textarea rows="4" placeholder="Message here..." onChange={(e) => handleChange('text', e)}/>
+						<ValidationIcon completed={isCompleted(text)}/>
 					</div>
 					<div className="button-row">
 						{!emailSent && <button onClick={submitContact}>{emailSending ? "Sending" : "Send"}</button>}

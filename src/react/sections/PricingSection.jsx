@@ -5,6 +5,7 @@ import {GridContainer} from "../components/GridContainer";
 import {Column} from "../components/Column";
 import {Hero} from "../components/Hero";
 import {Footer} from "../components/Footer";
+import {Header} from "../components/Header";
 
 
 
@@ -17,7 +18,7 @@ export class PricingSection extends React.Component {
 
             <div>
 
-                <Hero title="Gallery" height="30vh" image="http://i.imgur.com/jhkoXzR.jpg" />
+                <Header title="Gallery" height="30vh" color="transparent" />
 
                 <GridContainer spacing>
 

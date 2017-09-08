@@ -9,7 +9,7 @@ export const Footer = () => {
 
             <GridContainer>
 
-                <Column columnSize="2">
+                <Column columnSize="2"  hideMobile>
 
                     <h4 className="footer-category">Quick Links</h4>
                     <p className="footer-text">Home</p>
@@ -21,7 +21,7 @@ export const Footer = () => {
 
                 </Column>
 
-                <Column columnSize="2">
+                <Column columnSize="2" hideMobile>
 
                     <h4 className="footer-category">Contact Info</h4>
                     <p className="footer-text">Email: email@email.com</p>

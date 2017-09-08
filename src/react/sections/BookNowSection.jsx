@@ -20,6 +20,8 @@ const handleSubmit = e =>  {
 const submitBookNowRequest = () => sendEmail();
 
 const isCompleted = value => value && value.length !== 0 && value !== "";
+const isTimeCompleted = (a,b) => Boolean(a & b);
+
 
 const {SelectDate, SelectTime, SelectCharacters, EnterContactInfo, Review} = BookNowSteps;
 
@@ -71,99 +73,103 @@ export default observer(class BookNowSection extends React.Component {
 		return (
 
 		    <div>
-                <Header height="10vh"/>
+                <Header height="10vh" color="transparent"/>
                 <ContentContainer>
 
                     <h1>Request A Booking</h1>
 
                     <form onSubmit={handleSubmit}>
 
-                        {activeStep(SelectDate) &&
+                        {/*{activeStep(SelectDate) &&*/}
+                        {/*<div>*/}
+
+                            {/*<div className="input-block date">*/}
+                                {/*<DatePicker*/}
+                                    {/*selected={selectedDate}*/}
+                                    {/*onChange={selectDate}*/}
+                                    {/*withPortal*/}
+                                {/*/>*/}
+                                {/*<ValidationIcon completed={isCompleted(selectedDate)}/>*/}
+                            {/*</div>*/}
+
+                            {/*<div className="button-row">*/}
+                                {/*<button onClick={() => toStep(SelectTime)}>Next</button>*/}
+                            {/*</div>*/}
+                        {/*</div>*/}
+                        {/*}*/}
+
+                        {/*{activeStep(SelectTime) &&*/}
+                        {/*<div>*/}
+
+                            {/*<div className="input-block">*/}
+                                {/*<input type="time" placeholder="Select Start Time" onChange={(e) => handleChange("startTime", e)} autoFocus="autofocus"/>*/}
+                                {/*<ValidationIcon completed={isCompleted(startTime)}/>*/}
+                            {/*</div>*/}
+
+                            {/*<div className="input-block">*/}
+                                {/*<input type="time" placeholder="Select End Time" onChange={(e) => handleChange("endTime", e)}/>*/}
+                                {/*<ValidationIcon completed={isCompleted(endTime)}/>*/}
+                            {/*</div>*/}
+
+                            {/*<div className="button-row">*/}
+                                {/*<button onClick={() => toStep(EnterContactInfo)}>Next</button>*/}
+                            {/*</div>*/}
+                        {/*</div>}*/}
+
+                        {/*{activeStep(EnterContactInfo) &&*/}
+                        {/*<div>*/}
+
+                            {/*<div className="input-block">*/}
+                                {/*<input type="text" placeholder="Full Name" onChange={(e) => handleChange("fullName", e)} autoFocus="autofocus"/>*/}
+                                {/*<ValidationIcon completed={isCompleted(fullName)}/>*/}
+                            {/*</div>*/}
+
+                            {/*<div className="input-block">*/}
+                                {/*<input type="text" placeholder="Email" onChange={(e) => handleChange("email", e)}/>*/}
+                                {/*<ValidationIcon completed={isCompleted(email)}/>*/}
+                            {/*</div>*/}
+
+                            {/*<div className="input-block">*/}
+                                {/*<input type="text" placeholder="Notes" onChange={(e) => handleChange("notes", e)}/>*/}
+                                {/*<ValidationIcon completed={isCompleted(notes)}/>*/}
+                            {/*</div>*/}
+
+                            {/*<div className="button-row">*/}
+                                {/*<button onClick={() => toStep(Review)}>Next</button>*/}
+                            {/*</div>*/}
+
+                        {/*</div>}*/}
+
                         <div>
 
-                            <div className="input-block date">
-                                <DatePicker
-                                    selected={selectedDate}
-                                    onChange={selectDate}
-                                    withPortal
-                                />
-                                <ValidationIcon completed={isCompleted(selectedDate)}/>
-                            </div>
-
-                            <div className="button-row">
-                                <button onClick={() => toStep(SelectTime)}>Next</button>
-                            </div>
-                        </div>
-                        }
-
-                        {activeStep(SelectTime) &&
-                        <div>
-
-                            <div className="input-block">
-                                <input type="time" placeholder="Select Start Time" onChange={(e) => handleChange("startTime", e)} autoFocus="autofocus"/>
-                                <ValidationIcon completed={isCompleted(startTime)}/>
-                            </div>
-
-                            <div className="input-block">
-                                <input type="time" placeholder="Select End Time" onChange={(e) => handleChange("endTime", e)}/>
-                                <ValidationIcon completed={isCompleted(endTime)}/>
-                            </div>
-
-                            <div className="button-row">
-                                <button onClick={() => toStep(EnterContactInfo)}>Next</button>
-                            </div>
-                        </div>}
-
-                        {activeStep(EnterContactInfo) &&
-                        <div>
-
-                            <div className="input-block">
-                                <input type="text" placeholder="Full Name" onChange={(e) => handleChange("fullName", e)} autoFocus="autofocus"/>
-                                <ValidationIcon completed={isCompleted(fullName)}/>
-                            </div>
-
-                            <div className="input-block">
-                                <input type="text" placeholder="Email" onChange={(e) => handleChange("email", e)}/>
-                                <ValidationIcon completed={isCompleted(email)}/>
-                            </div>
-
-                            <div className="input-block">
-                                <input type="text" placeholder="Notes" onChange={(e) => handleChange("notes", e)}/>
-                                <ValidationIcon completed={isCompleted(notes)}/>
-                            </div>
-
-                            <div className="button-row">
-                                <button onClick={() => toStep(Review)}>Next</button>
-                            </div>
-
-                        </div>}
-
-                        {activeStep(Review) &&
-                        <div>
-
-                            <div className="input-block">
-                                <input type="text" placeholder="Selected Date" value={date} />
-                                <ValidationIcon completed={isCompleted(selectedDate)}/>
-                            </div>
+	                        <div className="input-block date">
+		                        <DatePicker
+			                        selected={selectedDate}
+			                        onChange={selectDate}
+			                        withPortal
+			                        placeholderText="click to select a date"
+		                        />
+		                        <ValidationIcon completed={isCompleted(selectedDate)}/>
+	                        </div>
 
                             <div className="input-block two-col">
-                                <input type="time" placeholder="Start Time" value={startTime}/>
-                                <input type="time" placeholder="End Time" value={endTime}/>
+                                <input type="time" placeholder="Start Time" onChange={(e) => handleChange("startTime", e)} />
+	                            <input type="time" placeholder="End Time" onChange={(e) => handleChange("endTime", e)} />
+                                <ValidationIcon completed={isTimeCompleted(startTime, endTime)}/>
+                            </div>
+
+                            <div className="input-block">
+                                <input type="text" placeholder="Full Name" onChange={(e) => handleChange("fullName", e)} />
                                 <ValidationIcon completed={isCompleted(fullName)}/>
                             </div>
 
                             <div className="input-block">
-                                <input type="text" placeholder="Full Name" value={fullName}/>
-                                <ValidationIcon completed={isCompleted(fullName)}/>
-                            </div>
-
-                            <div className="input-block">
-                                <input type="text" placeholder="Email" value={email}/>
+                                <input type="text" placeholder="Email" onChange={(e) => handleChange("email", e)} />
                                 <ValidationIcon completed={isCompleted(email)}/>
                             </div>
 
                             <div className="input-block">
-                               <input type="text" placeholder="notes" value={notes}/>
+                               <input type="text" placeholder="notes" onChange={(e) => handleChange("notes", e)} />
                                 <ValidationIcon completed={isCompleted(notes)}/>
                             </div>
 
@@ -171,8 +177,8 @@ export default observer(class BookNowSection extends React.Component {
                                 {!emailSent && <button onClick={submitBookNowRequest}>{emailSending ? "Sending..." : "Send Request"}</button>}
                                 {emailSent && <button className="active" >Booking Received!</button>}
                             </div>
+                        </div>
 
-                        </div>}
 
                     </form>
                 </ContentContainer>

@@ -3,19 +3,24 @@
   <component name="ChangeListManager">
     <list default="true" id="d0e33179-2fc4-40d7-97d2-af68bc7a02ff" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/react/Routes.jsx" afterPath="$PROJECT_DIR$/src/react/Routes.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/react/components/Header.jsx" afterPath="$PROJECT_DIR$/src/react/components/Header.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/react/components/Card.jsx" afterPath="$PROJECT_DIR$/src/react/components/Card.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/react/components/Column.jsx" afterPath="$PROJECT_DIR$/src/react/components/Column.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/react/components/ContentContainer.jsx" afterPath="$PROJECT_DIR$/src/react/components/ContentContainer.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/react/components/Footer.jsx" afterPath="$PROJECT_DIR$/src/react/components/Footer.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/react/components/GridContainer.jsx" afterPath="$PROJECT_DIR$/src/react/components/GridContainer.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/react/sections/BookNowSection.jsx" afterPath="$PROJECT_DIR$/src/react/sections/BookNowSection.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/react/sections/HomeSection.jsx" afterPath="$PROJECT_DIR$/src/react/sections/HomeSection.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/react/sections/ContactSection.jsx" afterPath="$PROJECT_DIR$/src/react/sections/ContactSection.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/react/sections/GalleryListSection.jsx" afterPath="$PROJECT_DIR$/src/react/sections/GalleryListSection.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/react/sections/PricingSection.jsx" afterPath="$PROJECT_DIR$/src/react/sections/PricingSection.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/App.css" afterPath="$PROJECT_DIR$/src/sass/App.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/App.scss" afterPath="$PROJECT_DIR$/src/sass/App.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/components/_card.scss" afterPath="$PROJECT_DIR$/src/sass/components/_card.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/components/footer.css" afterPath="$PROJECT_DIR$/src/sass/components/footer.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/components/footer.scss" afterPath="$PROJECT_DIR$/src/sass/components/footer.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/components/header.css" afterPath="$PROJECT_DIR$/src/sass/components/header.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/components/header.scss" afterPath="$PROJECT_DIR$/src/sass/components/header.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/components/hero.css" afterPath="$PROJECT_DIR$/src/sass/components/hero.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/components/hero.scss" afterPath="$PROJECT_DIR$/src/sass/components/hero.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/components/grid-container.css" afterPath="$PROJECT_DIR$/src/sass/components/grid-container.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/components/grid-container.scss" afterPath="$PROJECT_DIR$/src/sass/components/grid-container.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/components/navbar.css" afterPath="$PROJECT_DIR$/src/sass/components/navbar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/components/navbar.scss" afterPath="$PROJECT_DIR$/src/sass/components/navbar.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,7 +32,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileColors">
     <fileColor scope="Non-Project Files (Material Default)" color="2E3C43" />
     <fileColor scope="Non-Project Files (Material Darker)" color="323232" />
@@ -39,8 +43,28 @@
       <file leaf-file-name="ContactSection.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/react/sections/ContactSection.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+            <state relative-caret-position="-285">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="grid-container.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sass/components/grid-container.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GridContainer.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/react/components/GridContainer.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="5" column="57" lean-forward="false" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -49,45 +73,42 @@
       <file leaf-file-name="_card.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sass/components/_card.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+            <state relative-caret-position="95">
+              <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeSection.jsx" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/react/sections/HomeSection.jsx">
+      <file leaf-file-name="navbar.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sass/components/navbar.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="63" column="48" lean-forward="false" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="48" />
+            <state relative-caret-position="416">
+              <caret line="43" column="15" lean-forward="true" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <marker date="1504838505000" expanded="true" signature="1228:1229" ph="{...}" />
+                <marker date="1504838505000" expanded="true" signature="1228:1235" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PricingSection.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/react/sections/PricingSection.jsx">
+      <file leaf-file-name="App.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sass/App.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="371">
+              <caret line="33" column="39" lean-forward="false" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Routes.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/react/Routes.jsx">
+      <file leaf-file-name="ContactStore.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/stores/ContactStore.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="16" column="57" lean-forward="false" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="828">
+              <caret line="40" column="40" lean-forward="false" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -95,8 +116,8 @@
       <file leaf-file-name="BookNowSection.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/react/sections/BookNowSection.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="160" column="31" lean-forward="false" selection-start-line="160" selection-start-column="31" selection-end-line="160" selection-end-column="31" />
+            <state relative-caret-position="141">
+              <caret line="75" column="56" lean-forward="false" selection-start-line="75" selection-start-column="56" selection-end-line="75" selection-end-column="56" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -104,41 +125,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GalleryListSection.jsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GalleryListSection.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/react/sections/GalleryListSection.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="48" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="66" selection-end-column="2" />
+            <state relative-caret-position="82">
+              <caret line="42" column="51" lean-forward="false" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Header.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/react/components/Header.jsx">
+      <file leaf-file-name="PricingSection.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/react/sections/PricingSection.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="65" lean-forward="false" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Hero.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/react/components/Hero.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hero.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sass/components/hero.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+            <state relative-caret-position="78">
+              <caret line="20" column="72" lean-forward="false" selection-start-line="20" selection-start-column="72" selection-end-line="20" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -148,7 +149,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>over</find>
       <find>overla</find>
       <find>overlay</find>
       <find>overlay-</find>
@@ -177,7 +177,8 @@
       <find>.card</find>
       <find>bo</find>
       <find>body</find>
-      <find>body</find>
+      <find>.content-con</find>
+      <find>grid-</find>
     </findStrings>
     <replaceStrings>
       <replace>$primary</replace>
@@ -222,30 +223,30 @@
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/sass/components/sections.scss" />
         <option value="$PROJECT_DIR$/src/react/components/inputs/Container.jsx" />
-        <option value="$PROJECT_DIR$/src/react/components/Card.jsx" />
         <option value="$PROJECT_DIR$/src/lib/API/EmailApi.js" />
-        <option value="$PROJECT_DIR$/src/sass/components/navbar.scss" />
-        <option value="$PROJECT_DIR$/src/react/components/Footer.jsx" />
-        <option value="$PROJECT_DIR$/src/react/components/Column.jsx" />
         <option value="$PROJECT_DIR$/src/react/components/Hero.jsx" />
-        <option value="$PROJECT_DIR$/src/react/components/ContentContainer.jsx" />
-        <option value="$PROJECT_DIR$/src/sass/components/grid-container.scss" />
         <option value="$PROJECT_DIR$/src/sass/fonts.scss" />
         <option value="$PROJECT_DIR$/src/react/sections/CharacterSection.jsx" />
         <option value="$PROJECT_DIR$/src/react/components/Navbar.jsx" />
-        <option value="$PROJECT_DIR$/src/react/components/GridContainer.jsx" />
-        <option value="$PROJECT_DIR$/src/react/sections/GalleryListSection.jsx" />
-        <option value="$PROJECT_DIR$/src/react/sections/BookNowSection.jsx" />
-        <option value="$PROJECT_DIR$/src/sass/App.scss" />
-        <option value="$PROJECT_DIR$/src/sass/components/footer.scss" />
         <option value="$PROJECT_DIR$/src/sass/components/header.scss" />
         <option value="$PROJECT_DIR$/src/react/components/Header.jsx" />
         <option value="$PROJECT_DIR$/src/sass/components/hero.scss" />
-        <option value="$PROJECT_DIR$/src/react/sections/ContactSection.jsx" />
-        <option value="$PROJECT_DIR$/src/sass/components/_card.scss" />
         <option value="$PROJECT_DIR$/src/react/Routes.jsx" />
-        <option value="$PROJECT_DIR$/src/react/sections/PricingSection.jsx" />
         <option value="$PROJECT_DIR$/src/react/sections/HomeSection.jsx" />
+        <option value="$PROJECT_DIR$/src/react/components/Card.jsx" />
+        <option value="$PROJECT_DIR$/src/react/components/ContentContainer.jsx" />
+        <option value="$PROJECT_DIR$/src/react/components/Footer.jsx" />
+        <option value="$PROJECT_DIR$/src/sass/components/footer.scss" />
+        <option value="$PROJECT_DIR$/src/react/components/Column.jsx" />
+        <option value="$PROJECT_DIR$/src/react/components/GridContainer.jsx" />
+        <option value="$PROJECT_DIR$/src/sass/components/grid-container.scss" />
+        <option value="$PROJECT_DIR$/src/sass/components/_card.scss" />
+        <option value="$PROJECT_DIR$/src/react/sections/PricingSection.jsx" />
+        <option value="$PROJECT_DIR$/src/react/sections/ContactSection.jsx" />
+        <option value="$PROJECT_DIR$/src/sass/components/navbar.scss" />
+        <option value="$PROJECT_DIR$/src/sass/App.scss" />
+        <option value="$PROJECT_DIR$/src/react/sections/BookNowSection.jsx" />
+        <option value="$PROJECT_DIR$/src/react/sections/GalleryListSection.jsx" />
       </list>
     </option>
   </component>
@@ -317,92 +318,47 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="brenda-website" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="brenda-website" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="brenda-website" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="brenda-website" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="brenda-website" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="brenda-website" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sass" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="brenda-website" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="brenda-website" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="react" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="brenda-website" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="brenda-website" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="react" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sections" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="brenda-website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="brenda-website" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="brenda-website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="brenda-website" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="brenda-website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="brenda-website" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="brenda-website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="brenda-website" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="react" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="brenda-website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="brenda-website" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="react" type="462c0819:PsiDirectoryNode" />
+              <item name="sections" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="brenda-website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="brenda-website" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="stores" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
     </panes>
@@ -421,7 +377,7 @@
     <property name="node.js.selected.package.stylelint" value="" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="Routes&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/Routes.jsx&#10;.card&#9;null&#9;null&#10;hero&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/sass/components/hero.scss&#10;Header&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/components/Header.jsx&#10;header&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/sass/components/header.scss&#10;Footer&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/sass/components/footer.scss&#10;navbar&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/components/Navbar.jsx&#10;Boo&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/sections/BookNowSection.jsx&#10;Char&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/sections/CharacterSection.jsx&#10;Home&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/sections/HomeSection.jsx&#10;GalleryLis&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/sections/GalleryListSection.jsx&#10;container&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/sass/components/grid-container.scss&#10;Chara&#9;null&#9;null&#10;Card&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/components/Card.jsx&#10;col&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/components/Column.jsx&#10;footer.&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/sass/components/footer.scss&#10;na&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/components/Navbar.jsx&#10;html&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/public/index.html&#10;home&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/sections/HomeSection.jsx&#10;Book&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/sections/BookNowSection.jsx&#10;Ga&#9;null&#9;null&#10;sectio&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/sass/components/sections.scss&#10;Gallery&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/sections/GallerySection.jsx&#10;EmailA&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/lib/API/EmailApi.js&#10;BookNowS&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/stores/BookNowStore.js&#10;BookNow&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/sections/BookNowSection.jsx&#10;Book Now&#9;null&#9;null&#10;Conta&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/sections/ContactSection.jsx&#10;sec&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/sass/components/sections.scss&#10;form&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/sass/components/form.scss&#10;navba&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/sass/components/navbar.scss&#10;font&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/sass/fonts.scss&#10;Api&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/lib/API/EmailApi.js&#10;fonts&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/sass/fonts.scss&#10;section&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/sass/components/sections.scss&#10;fon&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/sass/fonts.scss&#10;Rou&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/Routes.jsx&#10;Cont&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/sections/ContactSection.jsx&#10;Con&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/stores/ContactStore.js&#10;Contac&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/stores/ContactStore.js&#10;sect&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/sass/components/sections.scss&#10;Contact&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/sections/ContactSection.jsx&#10;BookN&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/sections/BookNowSection.jsx&#10;Gall&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/sections/GallerySection.jsx&#10;Rout&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/Routes.jsx&#10;over&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/sass/components/menu-overlay.scss&#10;boo&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/sections/BookNowSection.jsx&#10;routes&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/Routes.jsx&#10;App&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/App.js&#10;conta&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/sections/ContactSection.jsx" />
+    <property name="SearchEverywhereHistoryKey" value="Gall&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/sections/GalleryListSection.jsx&#10;App.&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/sass/App.scss&#10;nav&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/sass/components/navbar.scss&#10;book no&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/sections/BookNowSection.jsx&#10;Contact&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/stores/ContactStore.js&#10;contact&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/sections/ContactSection.jsx&#10;Pricin&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/sections/PricingSection.jsx&#10;Boo&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/sections/BookNowSection.jsx&#10;card&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/sass/components/_card.scss&#10;content-container&#9;null&#9;null&#10;footer&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/sass/components/footer.scss&#10;Footer&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/components/Footer.jsx&#10;Col&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/components/Column.jsx&#10;Con&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/sections/ContactSection.jsx&#10;CArd&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/components/Card.jsx&#10;Routes&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/Routes.jsx&#10;.card&#9;null&#9;null&#10;hero&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/sass/components/hero.scss&#10;Header&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/components/Header.jsx&#10;header&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/sass/components/header.scss&#10;navbar&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/components/Navbar.jsx&#10;Char&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/sections/CharacterSection.jsx&#10;Home&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/sections/HomeSection.jsx&#10;GalleryLis&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/sections/GalleryListSection.jsx&#10;container&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/sass/components/grid-container.scss&#10;Chara&#9;null&#9;null&#10;Card&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/components/Card.jsx&#10;col&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/components/Column.jsx&#10;footer.&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/sass/components/footer.scss&#10;na&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/components/Navbar.jsx&#10;html&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/public/index.html&#10;home&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/sections/HomeSection.jsx&#10;Book&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/sections/BookNowSection.jsx&#10;Ga&#9;null&#9;null&#10;sectio&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/sass/components/sections.scss&#10;Gallery&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/sections/GallerySection.jsx&#10;EmailA&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/lib/API/EmailApi.js&#10;BookNowS&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/stores/BookNowStore.js&#10;BookNow&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/sections/BookNowSection.jsx&#10;Book Now&#9;null&#9;null&#10;Conta&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/react/sections/ContactSection.jsx&#10;sec&#9;FILE&#9;file:///home/alan/Web Projects/brenda-website/src/sass/components/sections.scss&#10;form&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/sass/components/form.scss&#10;navba&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/sass/components/navbar.scss&#10;font&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/sass/fonts.scss&#10;Api&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/lib/API/EmailApi.js&#10;fonts&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/sass/fonts.scss&#10;section&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/sass/components/sections.scss&#10;fon&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/sass/fonts.scss&#10;Rou&#9;FILE&#9;file:///Users/alan/WebstormProjects/brenda-website/src/react/Routes.jsx" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -445,6 +401,14 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
@@ -480,9 +444,6 @@
       <option name="cucumberJsArguments" value="" />
       <option name="executablePath" />
       <option name="filePath" />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -541,29 +502,40 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138004000" />
+    <option name="totallyTimeSpent" value="142204000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="0" width="1280" height="1024" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24741448" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13530655" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32853982" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36154777" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24004425" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24741448" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -584,9 +556,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -675,26 +644,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stores/ContactStore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="40" column="40" lean-forward="false" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/web-forms2.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="625" column="16" lean-forward="false" selection-start-line="625" selection-start-column="16" selection-end-line="625" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/components/form.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="38" column="28" lean-forward="false" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -711,7 +664,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="41" column="8" lean-forward="false" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -719,9 +671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="6" column="59" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="37" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -729,9 +678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="32" column="45" lean-forward="false" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -749,7 +695,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -761,95 +706,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/react/components/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/components/sections.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="103" lean-forward="false" selection-start-line="15" selection-start-column="103" selection-end-line="15" selection-end-column="103" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/API/EmailApi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="29" lean-forward="false" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#25#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/static/css/main.12cb84ce.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="0" column="2626" lean-forward="false" selection-start-line="0" selection-start-column="2626" selection-end-line="0" selection-end-column="2626" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/components/navbar.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/react/components/Column.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
-          <folding>
-            <marker date="1504270568434" expanded="true" signature="272:312" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/react/components/Card.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/react/components/common.js" />
+    <entry file="file://$PROJECT_DIR$/src/sass/components/sections.scss" />
+    <entry file="file://$PROJECT_DIR$/build/static/css/main.12cb84ce.css" />
     <entry file="file://$PROJECT_DIR$/src/sass/fonts.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="48" column="49" lean-forward="false" selection-start-line="48" selection-start-column="49" selection-end-line="48" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/components/grid-container.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/react/components/ContentContainer.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="1104">
+          <caret line="48" column="29" lean-forward="false" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
+          <folding>
+            <marker date="1504832799000" expanded="true" signature="758:853" ph="{...}" />
+            <marker date="1504832799000" expanded="true" signature="862:910" ph="{...}" />
+            <marker date="1504832799000" expanded="true" signature="927:1034" ph="{...}" />
+            <marker date="1504832799000" expanded="true" signature="1038:1078" ph="{...}" />
+            <marker date="1504832799000" expanded="true" signature="1090:1114" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -859,34 +729,6 @@
           <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
           <folding>
             <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/react/components/Navbar.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/react/components/GridContainer.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <marker date="1504659616112" expanded="true" signature="352:457" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/react/components/Footer.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="35" column="30" lean-forward="false" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -901,27 +743,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/App.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/components/footer.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/components/header.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -937,23 +762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/react/sections/ContactSection.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/components/_card.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -961,14 +769,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="5" column="65" lean-forward="false" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/react/sections/GalleryListSection.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="48" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="66" selection-end-column="2" />
           <folding />
         </state>
       </provider>
@@ -983,41 +783,182 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/react/sections/PricingSection.jsx">
+    <entry file="file://$PROJECT_DIR$/src/react/sections/GallerySection.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="167">
+          <caret line="76" column="34" lean-forward="false" selection-start-line="76" selection-start-column="34" selection-end-line="76" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/react/components/Navbar.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="11" column="88" lean-forward="false" selection-start-line="11" selection-start-column="88" selection-end-line="11" selection-end-column="88" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/react/sections/GallerySection.jsx">
+    <entry file="file://$PROJECT_DIR$/src/sass/components/form.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="67" column="16" lean-forward="false" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+        <state relative-caret-position="291">
+          <caret line="18" column="15" lean-forward="false" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="8" column="105" lean-forward="false" selection-start-line="8" selection-start-column="105" selection-end-line="8" selection-end-column="105" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/react/sections/HomeSection.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="73" column="17" lean-forward="true" selection-start-line="73" selection-start-column="17" selection-end-line="73" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/API/EmailApi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-23">
+          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/react/components/Card.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/react/components/ContentContainer.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/react/components/Column.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="64" lean-forward="false" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/react/components/Footer.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/components/footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="33" column="42" lean-forward="false" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/components/grid-container.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/react/sections/PricingSection.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="20" column="72" lean-forward="false" selection-start-line="20" selection-start-column="72" selection-end-line="20" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/components/_card.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/react/components/GridContainer.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="57" lean-forward="false" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stores/ContactStore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="40" column="40" lean-forward="false" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/react/sections/ContactSection.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-285">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/components/navbar.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="43" column="15" lean-forward="true" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
+          <folding>
+            <marker date="1504838505000" expanded="true" signature="1228:1229" ph="{...}" />
+            <marker date="1504838505000" expanded="true" signature="1228:1235" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/App.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="33" column="39" lean-forward="false" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/react/sections/BookNowSection.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="160" column="31" lean-forward="false" selection-start-line="160" selection-start-column="31" selection-end-line="160" selection-end-column="31" />
+        <state relative-caret-position="141">
+          <caret line="75" column="56" lean-forward="false" selection-start-line="75" selection-start-column="56" selection-end-line="75" selection-end-column="56" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/react/sections/HomeSection.jsx">
+    <entry file="file://$PROJECT_DIR$/src/react/sections/GalleryListSection.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="63" column="48" lean-forward="false" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="82">
+          <caret line="42" column="51" lean-forward="false" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>
