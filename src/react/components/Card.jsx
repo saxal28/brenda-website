@@ -10,7 +10,7 @@ export const Card = ({image, title, subtitle, children, color, onClick, noOverla
 
     return (
 
-        <div className="card" style={style}>
+        <div className="card" style={style} onClick={onClick}>
 
             {title && <h2>{title}</h2>}
             {subtitle && <p>{subtitle}</p>}

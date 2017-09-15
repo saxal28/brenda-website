@@ -1,5 +1,4 @@
 import React from 'react';
-import DatePicker from "react-datepicker";
 import {ValidationIcon} from "../ValidationIcon";
 import {observer} from 'mobx-react';
 
@@ -28,7 +27,7 @@ export default observer(class Input extends React.Component {
                 <input
                     type={type ? type : "text"}
                     placeholder={placeholder ? placeholder : ""}
-                    autoFocus="autofocus"
+                    autoFocus={autofocus ? "autofocus" : ""}
                     onChange={(e) => onChange(field, e)}
                     value={value ? value : ""}
                 />

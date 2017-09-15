@@ -2,11 +2,13 @@ import React from "react";
 
 export const Hero = ({image, height, title, subtitle, children, color}) => {
 
-    const style = {
+    const styles = {
         background: image ? `url(${image})` : (color ? color : "#333"),
         height: height ? height : "100vh",
         // backgroundColor: backgroundOverlay
     };
+
+    const style = {...styles, }
 
     return (
 

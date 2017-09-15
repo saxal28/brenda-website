@@ -19,6 +19,7 @@ const values = [
 	{image: "http://i.imgur.com/caS9AhG.jpg"},
 	{image: "http://i.imgur.com/caS9AhG.jpg"},
 	{image: "http://i.imgur.com/caS9AhG.jpg"},
+	{image: "http://i.imgur.com/caS9AhG.jpg"},
 ]
 
 export class CharacterSection extends React.Component {

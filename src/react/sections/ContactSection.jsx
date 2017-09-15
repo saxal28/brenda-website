@@ -1,14 +1,12 @@
 import React from "react";
 import {ContactStore} from "../../stores/ContactStore";
 import {observer} from "mobx-react";
-import {GridContainer} from "../components/GridContainer";
-import {Column} from "../components/Column";
 import {Header} from "../components/Header";
 import {ContentContainer} from "../components/ContentContainer";
 import {ValidationIcon} from "../components/ValidationIcon";
 
 export const contactStore = new ContactStore();
-const {handleChange, store, sendEmail} = contactStore;
+const {handleChange, sendEmail} = contactStore;
 
 const submitContact = () => sendEmail()
 const isCompleted = value => value && value.length !== 0 && value !== "";
@@ -18,7 +16,7 @@ export default observer(class ContactSection extends React.Component {
 	render() {
 
 		const {emailSent, emailSending} = contactStore
-		const {fullName, email, subject, text} = contactStore.store
+		const {fullName, email, subject} = contactStore.store
 
 		return (
 
@@ -45,7 +43,6 @@ export default observer(class ContactSection extends React.Component {
 					</div>
 					<div className="input-block">
 						<textarea rows="4" placeholder="Message here..." onChange={(e) => handleChange('text', e)}/>
-						<ValidationIcon completed={isCompleted(text)}/>
 					</div>
 					<div className="button-row">
 						{!emailSent && <button onClick={submitContact}>{emailSending ? "Sending" : "Send"}</button>}

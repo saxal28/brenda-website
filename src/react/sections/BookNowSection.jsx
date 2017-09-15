@@ -3,7 +3,6 @@ import {observer} from "mobx-react";
 import {ValidationIcon} from "../components/ValidationIcon";
 import DatePicker from "react-datepicker";
 import 'react-datepicker/dist/react-datepicker.css';
-import moment from 'moment'
 import {BookNowSteps, bookNowStore} from "../forms/BookNowForm";
 import {ContentContainer} from "../components/ContentContainer";
 import {Header} from "../components/Header";
@@ -20,7 +19,7 @@ const handleSubmit = e =>  {
 const submitBookNowRequest = () => sendEmail();
 
 const isCompleted = value => value && value.length !== 0 && value !== "";
-const isTimeCompleted = (a,b) => Boolean(a & b);
+const isTimeCompleted = (a,b) => Boolean(a && b);
 
 
 const {SelectDate, SelectTime, SelectCharacters, EnterContactInfo, Review} = BookNowSteps;
@@ -61,14 +60,8 @@ export default observer(class BookNowSection extends React.Component {
 
 	render() {
 
-		const activeStep = this.activeStep.bind(this)
-		const toStep = this.toStep.bind(this)
-		const getStepTitle = this.getStepTitle.bind(this)
-
-		const {selectedDate, selectedTime, fullName, email, notes, startTime, endTime } = store
+		const {selectedDate, fullName, email, notes, startTime, endTime } = store
 		const {emailSent, emailSending} = bookNowStore
-
-		const date = moment(selectedDate).format("MMM DD, YYYY")
 
 		return (
 
@@ -153,8 +146,8 @@ export default observer(class BookNowSection extends React.Component {
 	                        </div>
 
                             <div className="input-block two-col">
-                                <input type="time" placeholder="Start Time" onChange={(e) => handleChange("startTime", e)} />
-	                            <input type="time" placeholder="End Time" onChange={(e) => handleChange("endTime", e)} />
+                                <input type="text" placeholder="Start Time" onChange={(e) => handleChange("startTime", e)} />
+	                            <input type="text" placeholder="End Time" onChange={(e) => handleChange("endTime", e)} />
                                 <ValidationIcon completed={isTimeCompleted(startTime, endTime)}/>
                             </div>
 

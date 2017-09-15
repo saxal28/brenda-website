@@ -3,15 +3,12 @@ import firebase from "firebase";
 import _ from "lodash";
 import { observer } from "mobx-react";
 import {ImageStore} from "../../stores/ImageStore";
-import FileUploader from 'react-firebase-file-uploader';
 import {Card} from "../components/Card";
 import {GridContainer} from "../components/GridContainer";
 import {Column} from "../components/Column";
-import {Hero} from "../components/Hero";
 import {Footer} from "../components/Footer";
 import {Header} from "../components/Header";
 
-// import {UploadButton} from "./common/UploadButton";
 
 const store = new ImageStore();
 
@@ -31,9 +28,7 @@ export default observer(class GalleryListSection extends React.Component {
         const uids = _.keys(content);
         const values = _.values(content);
 
-        values.map((x, index) => {
-            x.uid = uids[index];
-        })
+        values.map((x, index) => x.uid = uids[index])
 
 
         return (
@@ -47,7 +42,7 @@ export default observer(class GalleryListSection extends React.Component {
                   {values.map(x => {
                       return (
 
-                         <Column columnSize="6">
+                         <Column columnSize="6" key={x.url}>
 
                             <Card noOverlay image={x.url}/>
 

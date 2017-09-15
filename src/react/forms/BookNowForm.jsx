@@ -6,8 +6,8 @@ import {observer} from "mobx-react";
 
 export const bookNowStore = new BookNowStore();
 
-const {handleChange, store, sendEmail, selectDate } = bookNowStore;
-const {selectedDate, selectedTime, fullName, email, notes, startTime, endTime } = store
+const {handleChange, store, selectDate } = bookNowStore;
+const {selectedDate,  fullName } = store
 
 
 // TODO -- handles everything related to the form

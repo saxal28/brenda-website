@@ -1,10 +1,7 @@
 import React from "react";
-import { observer } from "mobx-react";
 import {Card} from "../components/Card";
 import {GridContainer} from "../components/GridContainer";
 import {Column} from "../components/Column";
-import {Hero} from "../components/Hero";
-import {Footer} from "../components/Footer";
 import {Header} from "../components/Header";
 
 

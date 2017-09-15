@@ -2,7 +2,7 @@ import React from "react";
 
 export const ContentContainer = ({children, height}) => {
 
-    const heightStyle = height ? {background: height} : ""
+    const heightStyle = height ? {height: height} : ""
 
     const styles = [
         heightStyle,
@@ -10,7 +10,7 @@ export const ContentContainer = ({children, height}) => {
 
     return (
 
-        <div className="container content-container">
+        <div className="container content-container" style={styles}>
 
             {children}
 

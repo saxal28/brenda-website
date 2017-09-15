@@ -1,5 +1,4 @@
 import { extendObservable, action } from "mobx";
-import {sendTestMail} from "../lib/emails";
 import {AccountEmail} from "../app-config";
 import {SendBookNowEmail} from "../lib/API/EmailApi";
 import moment from "moment";
@@ -40,7 +39,7 @@ export class BookNowStore {
 
 			sendEmail: action(() => {
 
-				const {selectedDate, fullName, selectedCharacter, email, notes, startTime, endTime} = this.store;
+				const {selectedDate, fullName, email, notes, startTime, endTime} = this.store;
 
 				const bookNowEmail = {
 					"to": AccountEmail,

@@ -37,7 +37,10 @@
     margin: 0 0 5px 0;
     text-transform: uppercase; }
   .footer .footer-text {
-    margin: 0; }
+    margin: 0;
+    display: block;
+    text-decoration: none;
+    line-height: 1.6; }
   .footer .social-media-row {
     display: flex;
     justify-content: flex-end;

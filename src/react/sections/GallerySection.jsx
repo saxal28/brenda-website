@@ -5,7 +5,6 @@ import { observer } from "mobx-react";
 import {ImageStore} from "../../stores/ImageStore";
 import FileUploader from 'react-firebase-file-uploader';
 
-// import {UploadButton} from "./common/UploadButton";
 
 const store = new ImageStore();
 
@@ -64,9 +63,7 @@ export default observer(class GallerySection extends React.Component {
 		const uids = _.keys(content);
 		const values = _.values(content);
 
-		values.map((x, index) => {
-			x.uid = uids[index];
-		})
+		values.map((x, index) => x.uid = uids[index])
 
 		// const url = values.length > 0 ? values[0].url : "";
 		console.log(values)

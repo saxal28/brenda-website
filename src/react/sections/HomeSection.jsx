@@ -16,7 +16,11 @@ export class HomeSection extends React.Component {
 
 	render() {
 
-		// const navigateTo = this.navigateTo.bind(this)
+        const toGallery = () => this.navigateTo("gallery")
+        const toCharacters = () => this.navigateTo("characters")
+        const toPricing = () => this.navigateTo("pricing")
+        const toContact = () => this.navigateTo("contact")
+        const toBookNow = () => this.navigateTo("book-now")
 
 		return (
 			<div>
@@ -27,8 +31,8 @@ export class HomeSection extends React.Component {
 					<h1>For Your Next Party</h1>
 
 					<div className="button-row">
-						<button>Gallery</button>
-						<button>Book Now</button>
+						<button onClick={toGallery}>Gallery</button>
+						<button onClick={toBookNow}>Book Now</button>
 					</div>
 
 				</Hero>
@@ -46,6 +50,7 @@ export class HomeSection extends React.Component {
 
 						<Column>
 							<Card
+                                onClick={toGallery}
 								title="Gallery"
 								image="http://i.imgur.com/jhkoXzR.jpg"/>
 						</Column>
@@ -56,13 +61,16 @@ export class HomeSection extends React.Component {
 
 						<Column>
 							<Card
+                                onClick={toCharacters}
 								title="Characters"
 								image="http://i.imgur.com/CX5QmN2.jpg"/>
 						</Column>
 
 						<Column>
-							<Card title="Pricing"
-								  image="http://i.imgur.com/CX5QmN2.jpg"/>
+							<Card
+                                onClick={toPricing}
+                                title="Pricing"
+                                image="http://i.imgur.com/CX5QmN2.jpg"/>
 						</Column>
 
 					</GridContainer>
@@ -77,8 +85,8 @@ export class HomeSection extends React.Component {
 
 						<h1>Hire A Princess without breaking the bank!</h1>
 						<div className="button-row">
-							<button>Party Packages</button>
-							<button>Questions?</button>
+							<button onClick={toPricing}>Party Packages</button>
+							<button onClick={toContact}>Questions?</button>
 						</div>
 					</GridContainer>
 

@@ -1,5 +1,4 @@
 import { extendObservable, action } from "mobx";
-import {sendTestMail} from "../lib/emails";
 
 import {AccountEmail} from "../app-config";
 import {SendContactEmail} from "../lib/API/EmailApi";
